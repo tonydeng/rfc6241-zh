@@ -53,7 +53,7 @@
 - [8.  Capabilities](section-8/README.md)
      - [8.1.  Capabilities Exchange](section-8/capability-exchange.md)
      - [8.2.  Writable-Running Capability](section-8/writable-running-capability.md)
-     - [8.3.  Candidate Configuration Capability](section-8/candidate-configuration-capability.md)
+     - [8.3.  候选配置能力(Candidate Configuration Capability)](section-8/candidate-configuration-capability.md)
      - [8.4.  Confirmed Commit Capability](section-8/onfirmed-commit-capability.md)
      - [8.5.  Rollback-on-Error Capability](section-8/rollback-on-error-capability.md)
      - [8.6.  Validate Capability](section-8/validate-capability.md)
