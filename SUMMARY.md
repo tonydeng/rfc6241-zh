@@ -1,6 +1,6 @@
 # Summary
 
-- [关于本文档](README.md)
+- [关于RFC6241中文翻译](README.md)
 - [1. 介绍](section-1/README.md)
     - [1.1 术语](section-1/terminology.md)
     - [1.2 协议概述](section-1/protocol-overview.md)
