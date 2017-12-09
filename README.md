@@ -3,6 +3,8 @@
 
 ![datatracker rfc6241](images/datatracker-rfc6241.jpg)
 
+本文主要内容都来自于2011年6月发布的[RFC6241 - Network Configuration Protocol (NETCONF)](https://tools.ietf.org/html/rfc6241)，该RFC从2009年3月提出到最终发布一共修改了10个版本，其间修改内容可以[点击查看详细内容](https://datatracker.ietf.org/doc/rfc6241/)。
+
 ## 摘要
 
 本文档中定义的网络配置协议（`NETCONF`）提供了安装，操作和删除网络设备配置的机制。它使用基于可扩展标记语言（`XML`）的数据编码来处理配置数据以及协议消息。 `NETCONF`协议​​操作被实现为远程过程调用（`RPCs`）。这个文件废弃了[RFC 4741 -  NETCONF Configuration Protocol](https://tools.ietf.org/html/rfc4741)。
