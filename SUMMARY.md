@@ -27,7 +27,7 @@
     - [6.2.  子树过滤器](section-6/subtree-filter-components.md)
     - [6.3.  子树过滤处理](section-6/subtree-filter-processing.md)
     - [6.4.  子树过滤示例](section-6/subtree-filtering-examples.md)
-- [7.  Protocol Operations](section-7/README.md)
+- [7.  协议操作](section-7/README.md)
      - [7.1.  <get-config>](section-7/get-config.md)
      - [7.2.  <edit-config>](section-7/edit-config.md)
      - [7.3.  <copy-config>](section-7/copy-config.md)

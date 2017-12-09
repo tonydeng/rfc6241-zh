@@ -1,4 +1,4 @@
-# 2. 传输协议要求
+# 2. 传输协议要求(Transport Protocol Requirements)
 
 `NETCONF`使用基于`RPC`的通信范例。 客户端发送一系列的一个或多个`RPC`请求消息，这会使服务器响应一系列相应的`RPC`回复消息。
 
