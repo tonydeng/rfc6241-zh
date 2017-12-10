@@ -1,4 +1,4 @@
-# 7.1.  `<get-config>`
+# 7.1  `<get-config>`
 
 ## 说明：
 

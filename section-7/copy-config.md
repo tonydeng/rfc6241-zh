@@ -1,4 +1,4 @@
-# 7.3.  `<copy-config>`
+# 7.3  `<copy-config>`
 
 ## 说明：
 

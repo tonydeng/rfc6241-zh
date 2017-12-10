@@ -1,4 +1,4 @@
-# 7.2.  `<edit-config>`
+# 7.2  `<edit-config>`
 
 ## 描述：
 

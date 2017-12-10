@@ -1,4 +1,4 @@
-# 7.7.  `<get>`
+# 7.7  `<get>`
 
 ## 说明：
 
@@ -12,11 +12,11 @@
 
     如果`NETCONF`节点(`peer`)支持：`xpath`能力（见[第8.9节](https://tools.ietf.org/html/rfc6241#section-8.9)），则可以使用值“`xpath`”来指示`<filter>`元素的“`select`”属性包含一个`XPath`表达式。
 
-## 肯定回应：
+## 正面响应：
 
 如果设备能够满足请求，则发送`<rpc-reply>`。` <data`>部分包含适当的子集。
 
-## 否定响应：
+## 负面响应：
 
 如果由于任何原因无法完成请求，`<rpc-error>`元素将包含在`<rpc-reply>`中。
 

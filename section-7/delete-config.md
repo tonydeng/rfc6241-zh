@@ -1,4 +1,4 @@
-# 7.4. `<delete-config>`
+# 7.4 `<delete-config>`
 
 ## 说明：
 
