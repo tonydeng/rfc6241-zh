@@ -1,0 +1,963 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2.  身份验证，完整性和机密性 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mandatory-transport-protocol.html" />
+    
+    
+    <link rel="prev" href="connection-oriented-operation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC6241中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/terminology.html">
+            
+                <a href="../section-1/terminology.html">
+            
+                    
+                    1.1 术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../section-1/protocol-overview.html">
+            
+                <a href="../section-1/protocol-overview.html">
+            
+                    
+                    1.2 协议概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../section-1/capabilities.html">
+            
+                <a href="../section-1/capabilities.html">
+            
+                    
+                    1.3 能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../section-1/separation-of-configuration-and-state-data.html">
+            
+                <a href="../section-1/separation-of-configuration-and-state-data.html">
+            
+                    
+                    1.4 配置和状态数据的分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2. 传输协议要求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="connection-oriented-operation.html">
+            
+                <a href="connection-oriented-operation.html">
+            
+                    
+                    2.1.  面向连接的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="authentication-integrity-and-confidentiality.html">
+            
+                <a href="authentication-integrity-and-confidentiality.html">
+            
+                    
+                    2.2.  身份验证，完整性和机密性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="mandatory-transport-protocol.html">
+            
+                <a href="mandatory-transport-protocol.html">
+            
+                    
+                    2.3.  强制性传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3.  XML注意事项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/namespace.html">
+            
+                <a href="../section-3/namespace.html">
+            
+                    
+                    3.1.  命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section-3/document-type-declarations.html">
+            
+                <a href="../section-3/document-type-declarations.html">
+            
+                    
+                    3.2.  文件类型声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section-4/">
+            
+                <a href="../section-4/">
+            
+                    
+                    4.  RPC模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section-4/rpc.html">
+            
+                <a href="../section-4/rpc.html">
+            
+                    
+                    4.1.  < rpc >元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section-4/rpc-reply.html">
+            
+                <a href="../section-4/rpc-reply.html">
+            
+                    
+                    4.2.  < rpc-reply > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../section-4/rpc-error.html">
+            
+                <a href="../section-4/rpc-error.html">
+            
+                    
+                    4.3.  < rpc-error > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../section-4/ok.html">
+            
+                <a href="../section-4/ok.html">
+            
+                    
+                    4.4.  < ok > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../section-4/pipelining.html">
+            
+                <a href="../section-4/pipelining.html">
+            
+                    
+                    4.5.  流水线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5.  配置模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/configuration-datastores.html">
+            
+                <a href="../section-5/configuration-datastores.html">
+            
+                    
+                    5.1.  配置数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/data-modeling.html">
+            
+                <a href="../section-5/data-modeling.html">
+            
+                    
+                    5.2.  数据建模
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section-6/">
+            
+                <a href="../section-6/">
+            
+                    
+                    6.  子树过滤
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section-6/overview.html">
+            
+                <a href="../section-6/overview.html">
+            
+                    
+                    6.1.  概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section-6/subtree-filter-components.html">
+            
+                <a href="../section-6/subtree-filter-components.html">
+            
+                    
+                    6.2.  子树过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section-6/subtree-filter-processing.html">
+            
+                <a href="../section-6/subtree-filter-processing.html">
+            
+                    
+                    6.3.  子树过滤处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section-6/subtree-filtering-examples.html">
+            
+                <a href="../section-6/subtree-filtering-examples.html">
+            
+                    
+                    6.4.  子树过滤示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section-7/">
+            
+                <a href="../section-7/">
+            
+                    
+                    7.  协议操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section-7/get-config.html">
+            
+                <a href="../section-7/get-config.html">
+            
+                    
+                    7.1.  < get-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section-7/edit-config.html">
+            
+                <a href="../section-7/edit-config.html">
+            
+                    
+                    7.2.  < edit-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section-7/copy-config.html">
+            
+                <a href="../section-7/copy-config.html">
+            
+                    
+                    7.3.  < copy-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section-7/delete-config.html">
+            
+                <a href="../section-7/delete-config.html">
+            
+                    
+                    7.4.  < delete-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../section-7/lock.html">
+            
+                <a href="../section-7/lock.html">
+            
+                    
+                    7.5.  < lock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../section-7/unlock.html">
+            
+                <a href="../section-7/unlock.html">
+            
+                    
+                    7.6.  < unlock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../section-7/get.html">
+            
+                <a href="../section-7/get.html">
+            
+                    
+                    7.7.  < get >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../section-7/close-session.html">
+            
+                <a href="../section-7/close-session.html">
+            
+                    
+                    7.8.  < close-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../section-7/kill-session.html">
+            
+                <a href="../section-7/kill-session.html">
+            
+                    
+                    7.9.  < kill-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section-8/README.md">
+            
+                <span>
+            
+                    
+                    8.  Capabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section-8/capability-exchange.md">
+            
+                <span>
+            
+                    
+                    8.1.  Capabilities Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section-8/writable-running-capability.md">
+            
+                <span>
+            
+                    
+                    8.2.  Writable-Running Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section-8/candidate-configuration-capability.html">
+            
+                <a href="../section-8/candidate-configuration-capability.html">
+            
+                    
+                    8.3.  候选配置能力(Candidate Configuration Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../section-8/onfirmed-commit-capability.md">
+            
+                <span>
+            
+                    
+                    8.4.  Confirmed Commit Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../section-8/rollback-on-error-capability.md">
+            
+                <span>
+            
+                    
+                    8.5.  Rollback-on-Error Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../section-8/validate-capability.md">
+            
+                <span>
+            
+                    
+                    8.6.  Validate Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../section-8/distinct-startup-capability.md">
+            
+                <span>
+            
+                    
+                    8.7.  Distinct Startup Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../section-8/url-capability.md">
+            
+                <span>
+            
+                    
+                    8.8.  URL Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../section-8/xpath-capability.md">
+            
+                <span>
+            
+                    
+                    8.9.  XPath Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section-9/README.md">
+            
+                <span>
+            
+                    
+                    9.  Security Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../section-10/README.md">
+            
+                <span>
+            
+                    
+                    10. IANA Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../section-11/README.md">
+            
+                <span>
+            
+                    
+                    11. Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../section-11/acknowledgements.md">
+            
+                <span>
+            
+                    
+                    12. Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/README.md">
+            
+                <span>
+            
+                    
+                    13. References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../appendix/README.md">
+            
+                <span>
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.2.  身份验证，完整性和机密性</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="22-&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x673A;&#x5BC6;&#x6027;">2.2 &#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x673A;&#x5BC6;&#x6027;</h1>
+<p><code>NETCONF</code>&#x8FDE;&#x63A5;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x6570;&#x636E;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x673A;&#x5BC6;&#x6027;&#x548C;&#x91CD;&#x64AD;&#x4FDD;&#x62A4;&#x3002; <code>NETCONF</code>&#x4F9D;&#x8D56;&#x4E8E;&#x6B64;&#x529F;&#x80FD;&#x7684;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x3002; <code>NETCONF</code>&#x5BF9;&#x7B49;&#x65B9;&#x8BA4;&#x4E3A;&#x72EC;&#x7ACB;&#x4E8E;&#x672C;&#x6587;&#x6863;&#x63D0;&#x4F9B;&#x9002;&#x5F53;&#x7EA7;&#x522B;&#x7684;&#x5B89;&#x5168;&#x6027;&#x548C;&#x673A;&#x5BC6;&#x6027;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6839;&#x636E;&#x5E95;&#x5C42;&#x534F;&#x8BAE;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>TLS</code><a href="https://tools.ietf.org/html/rfc5246" target="_blank">[RFC5246 - The Transport Layer Security (TLS) Protocol              Version 1.2]</a>&#x6216;<code>SSH</code><a href="https://tools.ietf.org/html/rfc4251" target="_blank">[RFC4251 - The Secure Shell (SSH) Protocol Architecture]</a>&#x5BF9;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;</p>
+<p><code>NETCONF</code>&#x8FDE;&#x63A5;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x8BA4;&#x8BC1;&#x3002;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x8D1F;&#x8D23;&#x5C06;&#x670D;&#x52A1;&#x5668;&#x8BA4;&#x8BC1;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5E76;&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x8BA4;&#x8BC1;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002; <code>NETCONF</code>&#x5BF9;&#x7B49;&#x4F53;&#x5047;&#x5B9A;&#x8FDE;&#x63A5;&#x7684;&#x8BA4;&#x8BC1;&#x4FE1;&#x606F;&#x5DF2;&#x7ECF;&#x88AB;&#x5E95;&#x5C42;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x4F7F;&#x7528;&#x8DB3;&#x591F;&#x53EF;&#x4FE1;&#x7684;&#x673A;&#x5236;&#x8FDB;&#x884C;&#x4E86;&#x9A8C;&#x8BC1;&#xFF0C;&#x5E76;&#x4E14;&#x5BF9;&#x7B49;&#x4F53;&#x7684;&#x8EAB;&#x4EFD;&#x5DF2;&#x7ECF;&#x88AB;&#x5145;&#x5206;&#x9A8C;&#x8BC1;&#x3002;</p>
+<p><code>NETCONF</code>&#x7684;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x662F;&#x4E3A;&#x8BBE;&#x5907;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#xFF0C;&#x7D27;&#x5BC6;&#x8DDF;&#x8E2A;&#x8BBE;&#x5907;&#x672C;&#x5730;&#x63A5;&#x53E3;&#x7684;&#x529F;&#x80FD;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x9884;&#x8BA1;&#x5E95;&#x5C42;&#x534F;&#x8BAE;&#x4F7F;&#x7528;&#x8BBE;&#x5907;&#x4E0A;&#x53EF;&#x7528;&#x7684;&#x73B0;&#x6709;&#x8BA4;&#x8BC1;&#x673A;&#x5236;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x652F;&#x6301;<code>RADIUS</code> <a href="https://tools.ietf.org/html/rfc2865" target="_blank">[RFC2865 - Remote Authentication Dial In User Service (RADIUS)]</a>&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x7684;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x53EF;&#x80FD;&#x5141;&#x8BB8;&#x4F7F;&#x7528;<code>RADIUS</code>&#x6765;&#x9A8C;&#x8BC1;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x3002;</p>
+<p>&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#x5FC5;&#x987B;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x8BA4;&#x8BC1;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6807;&#x8BC6;&#xFF0C;&#x5176;&#x6743;&#x9650;&#x662F;&#x670D;&#x52A1;&#x5668;&#x5DF2;&#x77E5;&#x7684;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;<code>NETCONF</code>&#x7528;&#x6237;&#x540D;&#x3002;&#x7528;&#x6237;&#x540D;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E0E;<a href="https://tools.ietf.org/html/rfc6241#ref-W3C.REC-xml-20001006" target="_blank">W3C.REC-xml-20001006</a>&#x7684;<a href="https://www.w3.org/TR/2000/REC-xml-20001006#sec-documents" target="_blank">&#x7B2C;2.2&#x8282;</a>&#x7684;&#x201C;<code>Char</code>&#x201D;&#x751F;&#x4EA7;&#x76F8;&#x5339;&#x914D;&#x3002;&#x7528;&#x4E8E;&#x5BFC;&#x51FA;&#x7528;&#x6237;&#x540D;&#x7684;&#x7B97;&#x6CD5;&#x662F;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x7279;&#x5B9A;&#x7684;&#xFF0C;&#x53E6;&#x5916;&#x8FD8;&#x7279;&#x5B9A;&#x4E8E;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x4F7F;&#x7528;&#x7684;&#x9A8C;&#x8BC1;&#x673A;&#x5236;&#x3002;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7531;&#x5176;&#x4ED6;<code>NETCONF</code>&#x5C42;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+<p>&#x7531;<code>NETCONF</code>&#x7528;&#x6237;&#x540D;&#x6807;&#x8BC6;&#x7684;&#x7ED9;&#x5B9A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x662F;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x8FD9;&#x4E9B;&#x6743;&#x9650;&#x5FC5;&#x987B;&#x5728;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x6267;&#x884C;&#x3002;&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x7684;&#x7EC6;&#x8282;&#x8D85;&#x51FA;&#x4E86;&#x672C;&#x6587;&#x6863;&#x7684;&#x8303;&#x56F4;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="connection-oriented-operation.html" class="navigation navigation-prev " aria-label="Previous page: 2.1.  面向连接的操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mandatory-transport-protocol.html" class="navigation navigation-next " aria-label="Next page: 2.3.  强制性传输协议">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2.  身份验证，完整性和机密性","level":"1.3.2","depth":2,"next":{"title":"2.3.  强制性传输协议","level":"1.3.3","depth":2,"path":"section-2/mandatory-transport-protocol.md","ref":"section-2/mandatory-transport-protocol.md","articles":[]},"previous":{"title":"2.1.  面向连接的操作","level":"1.3.1","depth":2,"path":"section-2/connection-oriented-operation.md","ref":"section-2/connection-oriented-operation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-2/authentication-integrity-and-confidentiality.md","mtime":"2017-12-07T14:58:28.667Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-10T16:17:28.461Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

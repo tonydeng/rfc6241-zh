@@ -1,0 +1,1081 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.3.  < rpc-error > 元素 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ok.html" />
+    
+    
+    <link rel="prev" href="rpc-reply.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC6241中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/terminology.html">
+            
+                <a href="../section-1/terminology.html">
+            
+                    
+                    1.1 术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../section-1/protocol-overview.html">
+            
+                <a href="../section-1/protocol-overview.html">
+            
+                    
+                    1.2 协议概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../section-1/capabilities.html">
+            
+                <a href="../section-1/capabilities.html">
+            
+                    
+                    1.3 能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../section-1/separation-of-configuration-and-state-data.html">
+            
+                <a href="../section-1/separation-of-configuration-and-state-data.html">
+            
+                    
+                    1.4 配置和状态数据的分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section-2/">
+            
+                <a href="../section-2/">
+            
+                    
+                    2. 传输协议要求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../section-2/connection-oriented-operation.html">
+            
+                <a href="../section-2/connection-oriented-operation.html">
+            
+                    
+                    2.1.  面向连接的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../section-2/authentication-integrity-and-confidentiality.html">
+            
+                <a href="../section-2/authentication-integrity-and-confidentiality.html">
+            
+                    
+                    2.2.  身份验证，完整性和机密性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../section-2/mandatory-transport-protocol.html">
+            
+                <a href="../section-2/mandatory-transport-protocol.html">
+            
+                    
+                    2.3.  强制性传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3.  XML注意事项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/namespace.html">
+            
+                <a href="../section-3/namespace.html">
+            
+                    
+                    3.1.  命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section-3/document-type-declarations.html">
+            
+                <a href="../section-3/document-type-declarations.html">
+            
+                    
+                    3.2.  文件类型声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    4.  RPC模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="rpc.html">
+            
+                <a href="rpc.html">
+            
+                    
+                    4.1.  < rpc >元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="rpc-reply.html">
+            
+                <a href="rpc-reply.html">
+            
+                    
+                    4.2.  < rpc-reply > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="rpc-error.html">
+            
+                <a href="rpc-error.html">
+            
+                    
+                    4.3.  < rpc-error > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="ok.html">
+            
+                <a href="ok.html">
+            
+                    
+                    4.4.  < ok > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="pipelining.html">
+            
+                <a href="pipelining.html">
+            
+                    
+                    4.5.  流水线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5.  配置模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/configuration-datastores.html">
+            
+                <a href="../section-5/configuration-datastores.html">
+            
+                    
+                    5.1.  配置数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/data-modeling.html">
+            
+                <a href="../section-5/data-modeling.html">
+            
+                    
+                    5.2.  数据建模
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section-6/">
+            
+                <a href="../section-6/">
+            
+                    
+                    6.  子树过滤
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section-6/overview.html">
+            
+                <a href="../section-6/overview.html">
+            
+                    
+                    6.1.  概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section-6/subtree-filter-components.html">
+            
+                <a href="../section-6/subtree-filter-components.html">
+            
+                    
+                    6.2.  子树过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section-6/subtree-filter-processing.html">
+            
+                <a href="../section-6/subtree-filter-processing.html">
+            
+                    
+                    6.3.  子树过滤处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section-6/subtree-filtering-examples.html">
+            
+                <a href="../section-6/subtree-filtering-examples.html">
+            
+                    
+                    6.4.  子树过滤示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section-7/">
+            
+                <a href="../section-7/">
+            
+                    
+                    7.  协议操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section-7/get-config.html">
+            
+                <a href="../section-7/get-config.html">
+            
+                    
+                    7.1.  < get-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section-7/edit-config.html">
+            
+                <a href="../section-7/edit-config.html">
+            
+                    
+                    7.2.  < edit-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section-7/copy-config.html">
+            
+                <a href="../section-7/copy-config.html">
+            
+                    
+                    7.3.  < copy-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section-7/delete-config.html">
+            
+                <a href="../section-7/delete-config.html">
+            
+                    
+                    7.4.  < delete-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../section-7/lock.html">
+            
+                <a href="../section-7/lock.html">
+            
+                    
+                    7.5.  < lock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../section-7/unlock.html">
+            
+                <a href="../section-7/unlock.html">
+            
+                    
+                    7.6.  < unlock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../section-7/get.html">
+            
+                <a href="../section-7/get.html">
+            
+                    
+                    7.7.  < get >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../section-7/close-session.html">
+            
+                <a href="../section-7/close-session.html">
+            
+                    
+                    7.8.  < close-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../section-7/kill-session.html">
+            
+                <a href="../section-7/kill-session.html">
+            
+                    
+                    7.9.  < kill-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section-8/README.md">
+            
+                <span>
+            
+                    
+                    8.  Capabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section-8/capability-exchange.md">
+            
+                <span>
+            
+                    
+                    8.1.  Capabilities Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section-8/writable-running-capability.md">
+            
+                <span>
+            
+                    
+                    8.2.  Writable-Running Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section-8/candidate-configuration-capability.html">
+            
+                <a href="../section-8/candidate-configuration-capability.html">
+            
+                    
+                    8.3.  候选配置能力(Candidate Configuration Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../section-8/onfirmed-commit-capability.md">
+            
+                <span>
+            
+                    
+                    8.4.  Confirmed Commit Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../section-8/rollback-on-error-capability.md">
+            
+                <span>
+            
+                    
+                    8.5.  Rollback-on-Error Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../section-8/validate-capability.md">
+            
+                <span>
+            
+                    
+                    8.6.  Validate Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../section-8/distinct-startup-capability.md">
+            
+                <span>
+            
+                    
+                    8.7.  Distinct Startup Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../section-8/url-capability.md">
+            
+                <span>
+            
+                    
+                    8.8.  URL Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../section-8/xpath-capability.md">
+            
+                <span>
+            
+                    
+                    8.9.  XPath Capability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section-9/README.md">
+            
+                <span>
+            
+                    
+                    9.  Security Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../section-10/README.md">
+            
+                <span>
+            
+                    
+                    10. IANA Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../section-11/README.md">
+            
+                <span>
+            
+                    
+                    11. Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../section-11/acknowledgements.md">
+            
+                <span>
+            
+                    
+                    12. Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/README.md">
+            
+                <span>
+            
+                    
+                    13. References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../appendix/README.md">
+            
+                <span>
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4.3.  < rpc-error > 元素</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="43--rpc-error--&#x5143;&#x7D20;">4.3. &lt; rpc-error &gt; &#x5143;&#x7D20;</h1>
+<p>&#x5982;&#x679C;&#x5728;&#x5904;&#x7406;<code>&lt;rpc&gt;</code>&#x8BF7;&#x6C42;&#x671F;&#x95F4;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x5C06;&#x5728;<code>&lt;rpc-reply&gt;</code>&#x6D88;&#x606F;&#x4E2D;&#x53D1;&#x9001;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x670D;&#x52A1;&#x5668;&#x5728;&#x5904;&#x7406;<code>&lt;rpc&gt;</code>&#x8BF7;&#x6C42;&#x671F;&#x95F4;&#x9047;&#x5230;&#x591A;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;<code>&lt;rpc-reply&gt;</code>&#x53EF;&#x80FD;&#x5305;&#x542B;&#x591A;&#x4E2A;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x9700;&#x8981;&#x68C0;&#x6D4B;&#x6216;&#x62A5;&#x544A;&#x591A;&#x4E2A;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x9700;&#x8981;&#x6309;&#x7167;&#x7279;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x68C0;&#x67E5;&#x7279;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5728;&#x5904;&#x7406;&#x671F;&#x95F4;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x52A1;&#x5FC5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x5728;&#x5904;&#x7406;&#x671F;&#x95F4;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x8B66;&#x544A;&#x6761;&#x4EF6;&#xFF0C;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x5668;&#x7EDD;&#x5BF9;&#x4E0D;&#x80FD;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7684;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x8FD4;&#x56DE;&#x5E94;&#x7528;&#x7EA7;&#x6216;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7279;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</p>
+<p><code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<ul>
+<li><p><code>error-type</code>&#xFF1A;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x53D1;&#x751F;&#x7684;&#x6982;&#x5FF5;&#x5C42;&#xFF0C;&#x4E0B;&#x5217;&#x7C7B;&#x578B;&#x4E4B;&#x4E00;&#x3002;</p>
+<ol>
+<li><code>transport</code> (<code>layer: Secure Transport</code>)</li>
+<li><code>rpc</code> (<code>layer: Messages</code>)</li>
+<li><code>protocol</code> (<code>layer: Operations</code>)</li>
+<li><code>application</code> (<code>layer: Content</code>)</li>
+</ol>
+</li>
+<li><p><code>error-tag</code>&#xFF1A;&#x5305;&#x542B;&#x8BC6;&#x522B;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x76F8;&#x5173;&#x7684;&#x503C;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="https://tools.ietf.org/html/rfc6241#appendix-A" target="_blank">&#x9644;&#x5F55;A</a>&#x3002;</p>
+</li>
+<li><p><code>error-severity</code>&#xFF1A;&#x5305;&#x542B;&#x6807;&#x8BC6;&#x9519;&#x8BEF;&#x4E25;&#x91CD;&#x6027;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7531;&#x8BBE;&#x5907;&#x786E;&#x5B9A;&#x3002; &#x4E0B;&#x5217;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<ol>
+<li><code>error</code></li>
+<li><code>warning</code><blockquote>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x6CA1;&#x6709;&#x4F7F;&#x7528;<code>warning</code>&#x679A;&#x4E3E;&#x5B9A;&#x4E49;&#x7684;<error-tag>&#x503C;&#x3002; &#x8FD9;&#x662F;&#x4FDD;&#x7559;&#x4F9B;&#x5C06;&#x6765;&#x4F7F;&#x7528;&#x3002;</error-tag></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p><code>error-app-tag</code>&#xFF1A;&#x5305;&#x542B;&#x6807;&#x8BC6;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7279;&#x5B9A;&#x6216;&#x7279;&#x5B9A;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF09;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x9002;&#x5F53;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9519;&#x8BEF;&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x4E0E;&#x7279;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#x76F8;&#x5173;&#x8054;&#xFF0C;&#x5219;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x5C06;&#x4E0D;&#x5B58;&#x5728;&#x3002; &#x5982;&#x679C;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7279;&#x5B9A;&#x7684;&#x548C;&#x7279;&#x5B9A;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;<code>error-app-tag</code>&#x90FD;&#x5B58;&#x5728;&#xFF0C;&#x90A3;&#x4E48;&#x670D;&#x52A1;&#x5668;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7279;&#x5B9A;&#x7684;&#x503C;&#x3002;</p>
+</li>
+<li><p><code>error-path</code>&#xFF1A;&#x5305;&#x542B;&#x7EDD;&#x5BF9;<a href="https://tools.ietf.org/html/rfc6241#ref-W3C.REC-xpath-19991116" target="_blank">XPath</a>&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x7528;&#x4E8E;&#x6807;&#x8BC6;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x62A5;&#x544A;&#x7684;&#x9519;&#x8BEF;&#x5173;&#x8054;&#x7684;&#x8282;&#x70B9;&#x7684;&#x5143;&#x7D20;&#x8DEF;&#x5F84;&#x3002; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x9002;&#x5F53;&#x7684;&#x6709;&#x6548;&#x8F7D;&#x8377;&#x5143;&#x7D20;&#x6216;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x4E0E;&#x7279;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#x76F8;&#x5173;&#x8054;&#xFF0C;&#x5219;&#x8BE5;&#x5143;&#x7D20;&#x5C06;&#x4E0D;&#x5B58;&#x5728;&#x3002;</p>
+<ul>
+<li><code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x4EE5;&#x4E0B;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#x3002;<ul>
+<li>&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#x58F0;&#x660E;&#x7684;&#x96C6;&#x5408;&#x662F;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x4E0A;&#x7684;&#x8303;&#x56F4;&#x58F0;&#x660E;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x7ED1;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x662F;&#x7A7A;&#x7684;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x5E93;&#x662F;&#x6838;&#x5FC3;&#x51FD;&#x6570;&#x5E93;&#x3002;</li>
+</ul>
+</li>
+<li>&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x53D6;&#x51B3;&#x4E8E;&#x4E0E;&#x6240;&#x62A5;&#x544A;&#x7684;&#x9519;&#x8BEF;&#x76F8;&#x5173;&#x8054;&#x7684;&#x8282;&#x70B9;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;<code>payload</code>&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x4E0E;&#x9519;&#x8BEF;&#x5173;&#x8054;&#xFF0C;&#x5219;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;<code>rpc</code>&#x8BF7;&#x6C42;&#x7684;&#x6587;&#x6863;&#x8282;&#x70B9;&#xFF08;&#x5373;<code>&lt;rpc&gt;</code>&#x5143;&#x7D20;&#xFF09;&#x3002;</li>
+<li>&#x5426;&#x5219;&#xFF0C;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x6240;&#x6709;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x6839;&#xFF0C;&#x5373;&#x6240;&#x6709;&#x6570;&#x636E;&#x6A21;&#x578B;&#x4E2D;&#x5177;&#x6709;&#x4F5C;&#x4E3A;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x9876;&#x7EA7;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x3002;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>error-message</code>&#xFF1A;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x9002;&#x5408;&#x4EBA;&#x7C7B;&#x9605;&#x8BFB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#x3002; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E3A;&#x7279;&#x5B9A;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#x63D0;&#x4F9B;&#x9002;&#x5F53;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x5219;&#x8BE5;&#x5143;&#x7D20;&#x5C06;&#x4E0D;&#x5B58;&#x5728;&#x3002; &#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5728;<a href="https://tools.ietf.org/html/rfc6241#ref-W3C.REC-xml-20001006" target="_blank">[W3C.REC-xml-20001006]</a>&#x4E2D;&#x5B9A;&#x4E49;&#x5E76;&#x5728;<a href="https://tools.ietf.org/html/rfc3470" target="_blank">[RFC3470 - Guidelines for the Use of Extensible Markup Language (XML) within IETF Protocols]</a>&#x4E2D;&#x8BA8;&#x8BBA;&#x7684;<code>&quot;xml&#xFF1A;lang&quot;</code>&#x5C5E;&#x6027;&#x3002;</li>
+<li><code>error-info</code>&#xFF1A;&#x5305;&#x542B;&#x534F;&#x8BAE;&#x6216;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7279;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x5185;&#x5BB9;&#x3002; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E3A;&#x7279;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x6761;&#x4EF6;&#x63D0;&#x4F9B;&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;&#x5185;&#x5BB9;&#xFF0C;&#x5219;&#x8BE5;&#x5143;&#x7D20;&#x5C06;&#x4E0D;&#x5B58;&#x5728;&#x3002; <a href="https://tools.ietf.org/html/rfc6241#appendix-A" target="_blank">&#x9644;&#x5F55;A</a>&#x4E2D;&#x7684;&#x5217;&#x8868;&#x5B9A;&#x4E49;&#x4E86;&#x6BCF;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x4EFB;&#x4F55;&#x5F3A;&#x5236;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x5185;&#x5BB9;&#x3002; &#x5728;&#x4EFB;&#x4F55;&#x534F;&#x8BAE;&#x89C4;&#x5B9A;&#x7684;&#x5185;&#x5BB9;&#x4E4B;&#x540E;&#xFF0C;&#x6570;&#x636E;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x53EF;&#x80FD;&#x4F1A;&#x8981;&#x6C42;&#x67D0;&#x4E9B;&#x5E94;&#x7528;&#x5C42;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x5305;&#x542B;&#x5728;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x5BB9;&#x5668;&#x4E2D;&#x3002; &#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x989D;&#x5916;&#x7684;&#x5143;&#x7D20;&#x6765;&#x63D0;&#x4F9B;&#x6269;&#x5C55;&#x548C;/&#x6216;&#x5B9E;&#x73B0;&#x7279;&#x5B9A;&#x7684;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;URN&quot;</span> <span class="hljs-attr">xmlns:junos</span>=<span class="hljs-string">&quot;URL&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">rpc-error</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-severity</span>&gt;</span>error-severity<span class="hljs-tag">&lt;/<span class="hljs-name">error-severity</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-path</span>&gt;</span>error-path<span class="hljs-tag">&lt;/<span class="hljs-name">error-path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-message</span>&gt;</span>error-message<span class="hljs-tag">&lt;/<span class="hljs-name">error-message</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-info</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">error-info</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">rpc-error</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x63A5;&#x6536;&#x5230;<rpc>&#x5143;&#x7D20;&#x800C;&#x6CA1;&#x6709;<code>message-id</code>&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x3002;</rpc></p>
+<blockquote>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>NETCONF</code>&#x5BF9;&#x7B49;&#x65B9;&#x53EF;&#x4EE5;&#x7701;&#x7565;<code>&lt;rpc-reply&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x7684;<code>message-id</code>&#x5C5E;&#x6027;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">get-config</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">source</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">running</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">source</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">get-config</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rpc-error</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">error-type</span>&gt;</span>rpc<span class="hljs-tag">&lt;/<span class="hljs-name">error-type</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">error-tag</span>&gt;</span>missing-attribute<span class="hljs-tag">&lt;/<span class="hljs-name">error-tag</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">error-severity</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">error-severity</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">error-info</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">bad-attribute</span>&gt;</span>message-id<span class="hljs-tag">&lt;/<span class="hljs-name">bad-attribute</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">bad-element</span>&gt;</span>rpc<span class="hljs-tag">&lt;/<span class="hljs-name">bad-element</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">error-info</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">rpc-error</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0B;<code>&lt;rpc-reply&gt;</code>&#x8BF4;&#x660E;&#x4E86;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<blockquote>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x672C;&#x8282;&#x4E2D;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x4F7F;&#x7528;<name>&#x5143;&#x7D20;&#x6765;&#x533A;&#x5206;<interface>&#x5143;&#x7D20;&#x7684;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</interface></name></p>
+</blockquote>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+    <span class="hljs-attr">xmlns:xc</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">rpc-error</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-type</span>&gt;</span>application<span class="hljs-tag">&lt;/<span class="hljs-name">error-type</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-tag</span>&gt;</span>invalid-value<span class="hljs-tag">&lt;/<span class="hljs-name">error-tag</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-severity</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">error-severity</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-message</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+            MTU value 25000 is not within range 256..9192
+        <span class="hljs-tag">&lt;/<span class="hljs-name">error-message</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-info</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">top</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://example.com/schema/1.2/config&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">interface</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Ethernet0/0<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">mtu</span>&gt;</span>25000<span class="hljs-tag">&lt;/<span class="hljs-name">mtu</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">interface</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">top</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">error-info</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">rpc-error</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">rpc-error</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-type</span>&gt;</span>application<span class="hljs-tag">&lt;/<span class="hljs-name">error-type</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-tag</span>&gt;</span>invalid-value<span class="hljs-tag">&lt;/<span class="hljs-name">error-tag</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-severity</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">error-severity</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-message</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+            Invalid IP address for interface Ethernet1/0
+        <span class="hljs-tag">&lt;/<span class="hljs-name">error-message</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">error-info</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">top</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://example.com/schema/1.2/config&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">interface</span> <span class="hljs-attr">xc:operation</span>=<span class="hljs-string">&quot;replace&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Ethernet1/0<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">address</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>1.4<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">prefix-length</span>&gt;</span>24<span class="hljs-tag">&lt;/<span class="hljs-name">prefix-length</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">address</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">interface</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">top</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">error-info</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">rpc-error</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rpc-reply.html" class="navigation navigation-prev " aria-label="Previous page: 4.2.  < rpc-reply > 元素">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ok.html" class="navigation navigation-next " aria-label="Next page: 4.4.  < ok > 元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.3.  < rpc-error > 元素","level":"1.5.3","depth":2,"next":{"title":"4.4.  < ok > 元素","level":"1.5.4","depth":2,"path":"section-4/ok.md","ref":"section-4/ok.md","articles":[]},"previous":{"title":"4.2.  < rpc-reply > 元素","level":"1.5.2","depth":2,"path":"section-4/rpc-reply.md","ref":"section-4/rpc-reply.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-4/rpc-error.md","mtime":"2017-12-07T15:58:20.448Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-10T16:17:28.461Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
