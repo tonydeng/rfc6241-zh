@@ -1,4 +1,4 @@
-# 候选配置能力(Candidate Configuration Capability)
+# 8.3. 候选配置能力(Candidate Configuration Capability)
 
 ## 描述
 
@@ -8,7 +8,7 @@
 
 在把高级概念保持为一流的操作的同时，我们允许开发人员更清楚地了解客户端请求的内容以及服务器必须执行的操作。这样可以使意图更加明显，特殊情况更简单，操作之间的交互更加直接。
 
-例如，`confirm-commit：1.1` 功能（[第8.4节](https://tools.ietf.org/html/rfc6241#section-8.4)）与“复制确认(`copy confirmed`)”操作无关。
+例如，`confirm-commit：1.1` 功能（[第8.4节 - 确认提交能力(Confirmed Commit Capability)](onfirmed-commit-capability.md)）与“复制确认(`copy confirmed`)”操作无关。
 
 候选配置可以在多个会话中共享。除非客户端具有不共享候选配置的特定信息，否则它必须假定其他会话能够同时修改候选配置。因此，谨慎的做法是在修改候选配置之前锁定候选配置。
 
@@ -22,9 +22,7 @@
 
 候选能力由以下能力字符串标识：
 
-```xml
-urn:ietf:params:netconf:capability:candidate:1.0
-```
+> urn:ietf:params:netconf:capability:candidate:1.0
 
 ## 新操作
 
@@ -52,7 +50,7 @@ urn:ietf:params:netconf:capability:candidate:1.0
 
 #### 例子：
 
-```
+```xml
 <rpc message-id="101"
          xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
   <commit/>
