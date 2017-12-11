@@ -1,0 +1,32 @@
+# v1.0
+
+
+#### [Tony Deng ](wolf.deng@gmail.com) (26)
+
+* :memo: docs(1.0): 完善附录的翻译 (2017-12-12 00:50:13) [view commit 78e953f](https://github.com/tonydeng/rfc6241-zh/commit/78e953f)  
+* :memo: docs(1.0): 完成附录a和b的翻译 (2017-12-11 19:11:44) [view commit c9dec9d](https://github.com/tonydeng/rfc6241-zh/commit/c9dec9d)  
+* :memo: docs(1.0): 完成第11-13章 (2017-12-11 19:11:11) [view commit f638c85](https://github.com/tonydeng/rfc6241-zh/commit/f638c85)  
+* :memo: docs(1.0): 完成第十章“IANA考虑事项”的翻译 (2017-12-11 17:22:30) [view commit 590c6da](https://github.com/tonydeng/rfc6241-zh/commit/590c6da)  
+* :sparkles: feat(1.0): publish.sh添加执行权限 (2017-12-11 15:37:00) [view commit 50a9794](https://github.com/tonydeng/rfc6241-zh/commit/50a9794)  
+* :memo: docs(1.0): 完成第九章“安全考虑”的翻译 (2017-12-11 15:36:14) [view commit d8a4a8d](https://github.com/tonydeng/rfc6241-zh/commit/d8a4a8d)  
+* :sparkles: feat(1.0): 添加gitbook发布到github pages脚本 (2017-12-11 02:07:14) [view commit 34674d5](https://github.com/tonydeng/rfc6241-zh/commit/34674d5)  
+* :bug:fix(1.0): github pages无法使用_book目录作为source (2017-12-11 01:55:57) [view commit 1c89d50](https://github.com/tonydeng/rfc6241-zh/commit/1c89d50)  
+* :memo: docs(1.0): 添加gitbook在github pages输出 (2017-12-11 01:53:58) [view commit 457bf7b](https://github.com/tonydeng/rfc6241-zh/commit/457bf7b)  
+* :memo: docs(1.0): 完成第8章“能力”的翻译 (2017-12-11 01:49:58) [view commit abf0be8](https://github.com/tonydeng/rfc6241-zh/commit/abf0be8)  
+* :memo: docs(1.0): 完成第7章“协议操作”翻译 (2017-12-10 22:36:02) [view commit 0b641f0](https://github.com/tonydeng/rfc6241-zh/commit/0b641f0)  
+* :memo: docs(1.0): 完成第七章大部分的翻译 (2017-12-10 01:44:47) [view commit a90d831](https://github.com/tonydeng/rfc6241-zh/commit/a90d831)  
+* :bug:fix(1.0): 添加每章标题的中英文对照 (2017-12-09 22:07:58) [view commit 21ed66d](https://github.com/tonydeng/rfc6241-zh/commit/21ed66d)  
+* :memo: docs(1.0): 添加datatracker详细描述 (2017-12-09 12:27:11) [view commit 0dece77](https://github.com/tonydeng/rfc6241-zh/commit/0dece77)  
+* :hammer: refactor(1.0): 添加datacker图片 (2017-12-09 00:55:44) [view commit da2bf85](https://github.com/tonydeng/rfc6241-zh/commit/da2bf85)  
+* :memo: docs(1.0): 完成第6章子树过滤翻译 (2017-12-08 19:13:06) [view commit 63d4e19](https://github.com/tonydeng/rfc6241-zh/commit/63d4e19)  
+* :memo: docs(1.0): 完成第五章“配置模型”的翻译 (2017-12-07 23:58:12) [view commit 0bf10df](https://github.com/tonydeng/rfc6241-zh/commit/0bf10df)  
+* :memo: docs(1.0): 完成第四章RFC模块的翻译 (2017-12-07 23:49:57) [view commit 276a650](https://github.com/tonydeng/rfc6241-zh/commit/276a650)  
+* :memo: docs(1.0): 完成第三章“XML注意事项”的翻译 (2017-12-07 23:09:56) [view commit 2104824](https://github.com/tonydeng/rfc6241-zh/commit/2104824)  
+* :memo: docs(完成第二章“传输协议要求”的翻译): (2017-12-07 22:57:55) [view commit 307683b](https://github.com/tonydeng/rfc6241-zh/commit/307683b)  
+* :memo: docs(1.0): 完成第一章翻译 (2017-12-07 22:26:22) [view commit a8bf3e4](https://github.com/tonydeng/rfc6241-zh/commit/a8bf3e4)  
+* :memo: docs(1.0): 完成第一章的介绍部分 (2017-12-07 19:05:34) [view commit 5e1c08a](https://github.com/tonydeng/rfc6241-zh/commit/5e1c08a)  
+* :memo: docs(1.0): 添加候选配置能力(Candidate Configuration Capability)文档 (2017-11-30 00:42:57) [view commit f175ba7](https://github.com/tonydeng/rfc6241-zh/commit/f175ba7)  
+* :memo: docs(1.0): 初步完成目录 (2017-11-28 01:59:26) [view commit 578a80d](https://github.com/tonydeng/rfc6241-zh/commit/578a80d)  
+* :memo: docs(1.0): 添加说明及第一章目录 (2017-11-27 11:01:08) [view commit 7aa74fb](https://github.com/tonydeng/rfc6241-zh/commit/7aa74fb)  
+* :wrench: chore(1.0): add gitignore and license (2017-11-27 10:21:47) [view commit 33725f8](https://github.com/tonydeng/rfc6241-zh/commit/33725f8)  
+

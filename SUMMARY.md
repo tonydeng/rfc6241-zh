@@ -59,3 +59,4 @@
     - [附录D.能力模板](appendix/capability-template.md)
     - [附录E.使用NETCONF配置多个设备](appendix/configuring-multiple-devices-with-netconf.md)
     - [附录F. 基于RFC4741的变更](appendix/changes-from-rfc4741.md)
+- [Changelog](CHANGELOG.md)
