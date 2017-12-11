@@ -48,7 +48,7 @@
      - [8.8.  URL能力(URL Capability)](section-8/url-capability.md)
      - [8.9.  XPath功能(XPath Capability)](section-8/xpath-capability.md)
 - [9.  安全考虑](section-9/README.md)
-- [10. IANA Considerations](section-10/README.md)
+- [10. IANA考虑事项](section-10/README.md)
 - [11. Contributors](section-11/README.md)
 - [12. Acknowledgements](section-11/acknowledgements.md)
 - [13. References](section-13/README.md)
