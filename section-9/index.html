@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.2.  文件类型声明 · GitBook</title>
+        <title>9.  安全考虑 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../section-4/" />
+    <link rel="next" href="../section-10/README.md" />
     
     
-    <link rel="prev" href="namespace.html" />
+    <link rel="prev" href="../section-8/xpath-capability.html" />
     
 
     </head>
@@ -231,9 +231,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
             
-                <a href="./">
+                <a href="../section-3/">
             
                     
                     3.  XML注意事项
@@ -245,9 +245,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="namespace.html">
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/namespace.html">
             
-                <a href="namespace.html">
+                <a href="../section-3/namespace.html">
             
                     
                     3.1.  命名空间
@@ -258,9 +258,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="document-type-declarations.html">
+        <li class="chapter " data-level="1.4.2" data-path="../section-3/document-type-declarations.html">
             
-                <a href="document-type-declarations.html">
+                <a href="../section-3/document-type-declarations.html">
             
                     
                     3.2.  文件类型声明
@@ -748,9 +748,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../section-9/">
+        <li class="chapter active" data-level="1.10" data-path="./">
             
-                <a href="../section-9/">
+                <a href="./">
             
                     
                     9.  安全考虑
@@ -856,7 +856,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3.2.  文件类型声明</a>
+        <a href=".." >9.  安全考虑</a>
     </h1>
 </div>
 
@@ -871,8 +871,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="32-&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x58F0;&#x660E;">3.2 &#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x58F0;&#x660E;</h1>
-<p>&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#xFF08;&#x53C2;&#x89C1;<a href="https://tools.ietf.org/html/rfc6241#ref-W3C.REC-xml-20001006" target="_blank">W3C.REC-xml-20001006</a>&#x7684;<a href="https://www.w3.org/TR/2000/REC-xml-20001006#sec-prolog-dtd" target="_blank">&#x7B2C;2.8&#x8282;</a>&#xFF09;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x5728;<code>NETCONF</code>&#x5185;&#x5BB9;&#x4E2D;&#x3002;</p>
+                                <h1 id="9-&#x5B89;&#x5168;&#x8003;&#x8651;">9. &#x5B89;&#x5168;&#x8003;&#x8651;</h1>
+<p>&#x672C;&#x8282;&#x63D0;&#x4F9B;&#x4E86;<code>NETCONF</code>&#x6D88;&#x606F;&#x5C42;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x548C;<code>NETCONF</code>&#x534F;&#x8BAE;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x7684;&#x5B89;&#x5168;&#x8003;&#x8651;&#x3002; <code>NETCONF</code>&#x4F20;&#x8F93;&#x7684;&#x5B89;&#x5168;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x5728;&#x4F20;&#x8F93;&#x6587;&#x6863;&#x4E2D;&#x63D0;&#x4F9B;&#xFF0C;<code>NETCONF</code>&#x64CD;&#x7EB5;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x5B89;&#x5168;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x53EF;&#x4EE5;&#x5728;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x6587;&#x6863;&#x4E2D;&#x627E;&#x5230;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x6863;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x6388;&#x6743;&#x65B9;&#x6848;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x6848;&#x53EF;&#x80FD;&#x4E0E;&#x5143;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6216;&#x6570;&#x636E;&#x6A21;&#x578B;&#x76F8;&#x5173;&#x8054;&#x3002; &#x5B9E;&#x65BD;&#x8005;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>NETCONF</code>&#x63D0;&#x4F9B;&#x5168;&#x9762;&#x7684;&#x6388;&#x6743;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#x901A;&#x8FC7;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x6388;&#x6743;&#x53EF;&#x80FD;&#x4F1A;&#x6216;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x5C06;<code>1:1</code>&#x6620;&#x5C04;&#x5230;&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6570;&#x636E;&#x6A21;&#x578B;&#x53EF;&#x80FD;&#x4E0D;&#x517C;&#x5BB9;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x57FA;&#x4E8E;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x5C42;&#x4E2D;&#x53EF;&#x7528;&#x7684;&#x673A;&#x5236;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;<code>SSH</code>&#xFF0C;<code>Blocks Extensible Exchange Protocol</code>&#xFF08;<code>BEEP</code>&#xFF09;&#x7B49;&#xFF09;&#x8FDB;&#x884C;&#x6388;&#x6743;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x4E5F;&#x4E0D;&#x80FD;&#x88AB;&#x5168;&#x5C40;&#x9501;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x6240;&#x4FDD;&#x62A4;&#xFF0C;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x4F1A;&#x4EA7;&#x751F;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x540E;&#x679C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x914D;&#x7F6E;&#x672A;&#x88AB;&#x9501;&#x5B9A;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x4ECE;&#x5019;&#x9009;&#x914D;&#x7F6E;&#x4E2D;&#x63D0;&#x4EA4;&#x90E8;&#x5206;&#x5B8C;&#x6574;&#x7684;&#x8BBF;&#x95EE;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x5019;&#x9009;&#x914D;&#x7F6E;&#x7684;&#x9501;&#x7684;&#x6240;&#x6709;&#x8005;&#x800C;&#x8A00;&#x662F;&#x4E0D;&#x77E5;&#x9053;&#x7684;&#xFF0C;&#x5BFC;&#x81F4;&#x8BBE;&#x5907;&#x4E0D;&#x5B89;&#x5168;&#x6216;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x672C;&#x8D28;&#x4E0A;&#x662F;<strong>&#x654F;&#x611F;</strong>&#x7684;&#x3002;&#x5B83;&#x7684;&#x4F20;&#x8F93;&#x6E05;&#x6670;&#xFF0C;&#x6CA1;&#x6709;&#x5B8C;&#x6574;&#x6027;&#x68C0;&#x67E5;&#xFF0C;&#x8BA9;&#x8BBE;&#x5907;&#x9762;&#x4E34;&#x7ECF;&#x5178;&#x7684;&#x7A83;&#x542C;&#x548C;&#x865A;&#x5047;&#x7684;&#x6570;&#x636E;&#x6CE8;&#x5165;&#x653B;&#x51FB;&#x3002;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x901A;&#x5E38;&#x5305;&#x542B;&#x5BC6;&#x7801;&#xFF0C;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x670D;&#x52A1;&#x63CF;&#x8FF0;&#x548C;&#x62D3;&#x6251;&#x4FE1;&#x606F;&#xFF0C;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x654F;&#x611F;&#x7684;&#x3002;&#x6B63;&#x56E0;&#x4E3A;&#x5982;&#x6B64;&#xFF0C;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x5E94;&#x8BE5;&#x4ED4;&#x7EC6;&#x5B9E;&#x65BD;&#xFF0C;&#x5E76;&#x5145;&#x5206;&#x6CE8;&#x610F;&#x5230;&#x5176;&#x4ED6;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x7684;&#x5404;&#x79CD;&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x534F;&#x8BAE;&#x5FC5;&#x987B;&#x6700;&#x4F4E;&#x9650;&#x5EA6;&#x5730;&#x652F;&#x6301;&#x4FDD;&#x5BC6;&#x548C;&#x8BA4;&#x8BC1;&#x9009;&#x9879;&#x3002;&#x9884;&#x8BA1;&#x5E95;&#x5C42;&#x534F;&#x8BAE;&#xFF08;<code>SSH</code>&#xFF0C;<code>BEEP</code>&#x7B49;&#xFF09;&#x5C06;&#x6839;&#x636E;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x673A;&#x5BC6;&#x6027;&#x548C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x8FD8;&#x671F;&#x671B;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x7684;&#x6BCF;&#x4E00;&#x7AEF;&#x7684;&#x8EAB;&#x4EFD;&#x53EF;&#x4EE5;&#x88AB;&#x53E6;&#x4E00;&#x7AEF;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x5B9A;&#x4EFB;&#x4F55;&#x7ED9;&#x5B9A;&#x8BF7;&#x6C42;&#x7684;&#x6388;&#x6743;&#x3002;&#x4EBA;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x8BBE;&#x60F3;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x4F20;&#x8F93;&#x548C;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x4F9B;&#x6388;&#x6743;&#x4E4B;&#x7528;&#x3002; <code>NETCONF</code>&#x672C;&#x8EAB;&#x4E0D;&#x63D0;&#x4F9B;&#x91CD;&#x65B0;&#x8BA4;&#x8BC1;&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x8BA4;&#x8BC1;&#x3002;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x90FD;&#x53D1;&#x751F;&#x5728;&#x8F83;&#x4F4E;&#x5C42;&#x6B21;&#x4E0A;&#x3002;</p>
+<p>&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x5728;&#x8BA4;&#x8BC1;&#x4E4B;&#x524D;&#x548C;&#x4E4B;&#x540E;&#x90FD;&#x53EF;&#x80FD;&#x5141;&#x8BB8;&#x4E0D;&#x540C;&#x7684;&#x6743;&#x9650;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x672A;&#x6307;&#x5B9A;&#x6388;&#x6743;&#x6A21;&#x578B;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6CA1;&#x6709;&#x6B63;&#x786E;&#x7684;&#x6388;&#x6743;&#xFF0C;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x201C;&#x8BBF;&#x95EE;&#x88AB;&#x62D2;&#x7EDD;&#x201D;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;</p>
+<blockquote>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x6388;&#x6743;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x4EE5;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#x4EA4;&#x6362;&#xFF0C;&#x8FD9;&#x662F;&#x4FDD;&#x8BC1;&#x8FDE;&#x63A5;&#x5B89;&#x5168;&#x7684;&#x66F4;&#x591A;&#x7406;&#x7531;&#x3002;</p>
+</blockquote>
+<p>&#x6709;&#x4EBA;&#x8BF4;&#xFF0C;&#x91CD;&#x8981;&#x7684;&#x662F;&#x8981;&#x8BA4;&#x8BC6;&#x5230;&#xFF0C;&#x6709;&#x4E9B;&#x884C;&#x4E3A;&#x6BD4;&#x53E6;&#x5916;&#x5176;&#x4ED6;&#x7684;&#x884C;&#x4E3A;&#x663E;&#x7136;&#x66F4;&#x654F;&#x611F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x542F;&#x52A8;&#x6216;&#x8FD0;&#x884C;&#x914D;&#x7F6E;&#x7684;<code>&lt;copy-config&gt;</code>&#x663E;&#x7136;&#x4E0D;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;<code>&lt;edit-config&gt;</code>&#x662F;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5168;&#x5C40;&#x6027;&#x64CD;&#x4F5C;&#x5FC5;&#x987B;&#x7981;&#x6B62;&#x4E2A;&#x4EBA;&#x6CA1;&#x6709;&#x6388;&#x6743;&#x6267;&#x884C;&#x7684;&#x4FE1;&#x606F;&#x7684;&#x6539;&#x53D8;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5141;&#x8BB8;&#x7528;&#x6237;A&#x5728;&#x63A5;&#x53E3;&#x4E0A;&#x914D;&#x7F6E;<code>IP</code>&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x7528;&#x6237;B&#x5DF2;&#x7ECF;&#x5728;<code>&lt;candidate&gt;</code>&#x914D;&#x7F6E;&#x4E2D;&#x7684;&#x63A5;&#x53E3;&#x4E0A;&#x914D;&#x7F6E;&#x4E86;<code>IP</code>&#x5730;&#x5740;&#xFF0C;&#x5219;&#x4E0D;&#x5F97;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x63D0;&#x4EA4;<code>&lt;candidate&gt;</code>&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x540C;&#x6837;&#xFF0C;&#x4EC5;&#x4EC5;&#x56E0;&#x4E3A;&#x6709;&#x4EBA;&#x8BF4;&#x201C;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x5730;&#x65B9;&#x901A;&#x8FC7;<code>URL</code>&#x529F;&#x80FD;&#x53BB;&#x5199;&#x914D;&#x7F6E;&#x201D;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;&#x9002;&#x5F53;&#x7684;&#x6388;&#x6743;&#xFF0C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5C31;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#x3002;</p>
+<p><code>&lt;lock&gt;</code>&#x64CD;&#x4F5C;&#x5C06;&#x6F14;&#x793A;<code>NETCONF</code>&#x65E8;&#x5728;&#x4F9B;&#x5177;&#x6709;&#x81F3;&#x5C11;&#x4E00;&#x4E9B;&#x7BA1;&#x7406;&#x5458;&#x4FE1;&#x4EFB;&#x7684;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x8FF0;&#xFF0C;&#x53EF;&#x4EE5;&#x9501;&#x5B9A;&#x4E3B;&#x4F53;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7684;&#x914D;&#x7F6E;&#x90E8;&#x5206;&#x3002;&#x6BD5;&#x7ADF;&#xFF0C;&#x6574;&#x4E2A;&#x914D;&#x7F6E;&#x88AB;&#x9501;&#x5B9A;&#x3002;&#x4E3A;&#x4E86;&#x7F13;&#x89E3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x77E5;&#x9053;&#x8FDD;&#x89C4;&#x4F1A;&#x8BDD;&#x7684;&#x4F1A;&#x8BDD;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;<code>NETCONF</code>&#x4E2D;&#x4EE5;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x7EC8;&#x6B62;&#x53E6;&#x4E00;&#x4E2A;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x3002;</li>
+<li>&#x53E6;&#x4E00;&#x79CD;&#x89E3;&#x9501;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x8BBE;&#x5907;&#x7684;&#x672C;&#x5730;&#x7528;&#x6237;&#x754C;&#x9762;&#x4E2D;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x4E24;&#x79CD;&#x673A;&#x5236;&#x7684;&#x7ADE;&#x4E89;&#x6761;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4ECE;&#x8BA4;&#x8BC1;&#xFF0C;&#x6388;&#x6743;&#x548C;&#x8BA1;&#x5E10;&#xFF08;<code>AAA</code>&#xFF09;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x5220;&#x9664;&#x6709;&#x95EE;&#x9898;&#x7684;&#x7528;&#x6237;&#x6765;&#x6539;&#x5584;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5728;&#x6240;&#x6709;&#x7684;&#x90E8;&#x7F72;&#x573A;&#x666F;&#x4E2D;&#x90FD;&#x6CA1;&#x6709;&#x7528;&#x5904;&#xFF0C;&#x4F8B;&#x5982;&#x4F7F;&#x7528;<code>SSH</code>&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
 
                                 
                                 </section>
@@ -900,12 +917,12 @@
 
             
                 
-                <a href="namespace.html" class="navigation navigation-prev " aria-label="Previous page: 3.1.  命名空间">
+                <a href="../section-8/xpath-capability.html" class="navigation navigation-prev " aria-label="Previous page: 8.9.  XPath功能(XPath Capability)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../section-4/" class="navigation navigation-next " aria-label="Next page: 4.  RPC模型">
+                <a href="../section-10/README.md" class="navigation navigation-next " aria-label="Next page: 10. IANA Considerations">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -916,7 +933,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2.  文件类型声明","level":"1.4.2","depth":2,"next":{"title":"4.  RPC模型","level":"1.5","depth":1,"path":"section-4/README.md","ref":"section-4/README.md","articles":[{"title":"4.1.  < rpc >元素","level":"1.5.1","depth":2,"path":"section-4/rpc.md","ref":"section-4/rpc.md","articles":[]},{"title":"4.2.  < rpc-reply > 元素","level":"1.5.2","depth":2,"path":"section-4/rpc-reply.md","ref":"section-4/rpc-reply.md","articles":[]},{"title":"4.3.  < rpc-error > 元素","level":"1.5.3","depth":2,"path":"section-4/rpc-error.md","ref":"section-4/rpc-error.md","articles":[]},{"title":"4.4.  < ok > 元素","level":"1.5.4","depth":2,"path":"section-4/ok.md","ref":"section-4/ok.md","articles":[]},{"title":"4.5.  流水线","level":"1.5.5","depth":2,"path":"section-4/pipelining.md","ref":"section-4/pipelining.md","articles":[]}]},"previous":{"title":"3.1.  命名空间","level":"1.4.1","depth":2,"path":"section-3/namespace.md","ref":"section-3/namespace.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-3/document-type-declarations.md","mtime":"2017-12-09T04:28:03.549Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-11T11:13:28.848Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.  安全考虑","level":"1.10","depth":1,"next":{"title":"10. IANA Considerations","level":"1.11","depth":1,"path":"section-10/README.md","ref":"section-10/README.md","articles":[]},"previous":{"title":"8.9.  XPath功能(XPath Capability)","level":"1.9.9","depth":2,"path":"section-8/xpath-capability.md","ref":"section-8/xpath-capability.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-9/README.md","mtime":"2017-12-11T07:37:31.867Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-11T11:13:28.848Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
