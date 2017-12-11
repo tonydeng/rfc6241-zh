@@ -1,0 +1,1260 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>附录B.NETCONF消息层的XML Schema · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="yang-module-for-netconf-protocol-operations.html" />
+    
+    
+    <link rel="prev" href="netconf-error-list.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC6241中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/terminology.html">
+            
+                <a href="../section-1/terminology.html">
+            
+                    
+                    1.1 术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../section-1/protocol-overview.html">
+            
+                <a href="../section-1/protocol-overview.html">
+            
+                    
+                    1.2 协议概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../section-1/capabilities.html">
+            
+                <a href="../section-1/capabilities.html">
+            
+                    
+                    1.3 能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../section-1/separation-of-configuration-and-state-data.html">
+            
+                <a href="../section-1/separation-of-configuration-and-state-data.html">
+            
+                    
+                    1.4 配置和状态数据的分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section-2/">
+            
+                <a href="../section-2/">
+            
+                    
+                    2. 传输协议要求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../section-2/connection-oriented-operation.html">
+            
+                <a href="../section-2/connection-oriented-operation.html">
+            
+                    
+                    2.1.  面向连接的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../section-2/authentication-integrity-and-confidentiality.html">
+            
+                <a href="../section-2/authentication-integrity-and-confidentiality.html">
+            
+                    
+                    2.2.  身份验证，完整性和机密性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../section-2/mandatory-transport-protocol.html">
+            
+                <a href="../section-2/mandatory-transport-protocol.html">
+            
+                    
+                    2.3.  强制性传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3.  XML注意事项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/namespace.html">
+            
+                <a href="../section-3/namespace.html">
+            
+                    
+                    3.1.  命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section-3/document-type-declarations.html">
+            
+                <a href="../section-3/document-type-declarations.html">
+            
+                    
+                    3.2.  文件类型声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section-4/">
+            
+                <a href="../section-4/">
+            
+                    
+                    4.  RPC模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section-4/rpc.html">
+            
+                <a href="../section-4/rpc.html">
+            
+                    
+                    4.1.  < rpc >元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section-4/rpc-reply.html">
+            
+                <a href="../section-4/rpc-reply.html">
+            
+                    
+                    4.2.  < rpc-reply > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../section-4/rpc-error.html">
+            
+                <a href="../section-4/rpc-error.html">
+            
+                    
+                    4.3.  < rpc-error > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../section-4/ok.html">
+            
+                <a href="../section-4/ok.html">
+            
+                    
+                    4.4.  < ok > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../section-4/pipelining.html">
+            
+                <a href="../section-4/pipelining.html">
+            
+                    
+                    4.5.  流水线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5.  配置模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/configuration-datastores.html">
+            
+                <a href="../section-5/configuration-datastores.html">
+            
+                    
+                    5.1.  配置数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/data-modeling.html">
+            
+                <a href="../section-5/data-modeling.html">
+            
+                    
+                    5.2.  数据建模
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section-6/">
+            
+                <a href="../section-6/">
+            
+                    
+                    6.  子树过滤
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section-6/overview.html">
+            
+                <a href="../section-6/overview.html">
+            
+                    
+                    6.1.  概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section-6/subtree-filter-components.html">
+            
+                <a href="../section-6/subtree-filter-components.html">
+            
+                    
+                    6.2.  子树过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section-6/subtree-filter-processing.html">
+            
+                <a href="../section-6/subtree-filter-processing.html">
+            
+                    
+                    6.3.  子树过滤处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section-6/subtree-filtering-examples.html">
+            
+                <a href="../section-6/subtree-filtering-examples.html">
+            
+                    
+                    6.4.  子树过滤示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section-7/">
+            
+                <a href="../section-7/">
+            
+                    
+                    7.  协议操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section-7/get-config.html">
+            
+                <a href="../section-7/get-config.html">
+            
+                    
+                    7.1.  < get-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section-7/edit-config.html">
+            
+                <a href="../section-7/edit-config.html">
+            
+                    
+                    7.2.  < edit-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section-7/copy-config.html">
+            
+                <a href="../section-7/copy-config.html">
+            
+                    
+                    7.3.  < copy-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section-7/delete-config.html">
+            
+                <a href="../section-7/delete-config.html">
+            
+                    
+                    7.4.  < delete-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../section-7/lock.html">
+            
+                <a href="../section-7/lock.html">
+            
+                    
+                    7.5.  < lock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../section-7/unlock.html">
+            
+                <a href="../section-7/unlock.html">
+            
+                    
+                    7.6.  < unlock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../section-7/get.html">
+            
+                <a href="../section-7/get.html">
+            
+                    
+                    7.7.  < get >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../section-7/close-session.html">
+            
+                <a href="../section-7/close-session.html">
+            
+                    
+                    7.8.  < close-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../section-7/kill-session.html">
+            
+                <a href="../section-7/kill-session.html">
+            
+                    
+                    7.9.  < kill-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section-8/">
+            
+                <a href="../section-8/">
+            
+                    
+                    8.  能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section-8/capability-exchange.html">
+            
+                <a href="../section-8/capability-exchange.html">
+            
+                    
+                    8.1.  能力交换(Capabilities Exchange)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section-8/writable-running-capability.html">
+            
+                <a href="../section-8/writable-running-capability.html">
+            
+                    
+                    8.2.  可写入运行能力(Writable-Running Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section-8/candidate-configuration-capability.html">
+            
+                <a href="../section-8/candidate-configuration-capability.html">
+            
+                    
+                    8.3.  候选配置能力(Candidate Configuration Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../section-8/onfirmed-commit-capability.html">
+            
+                <a href="../section-8/onfirmed-commit-capability.html">
+            
+                    
+                    8.4.  确认提交能力(Confirmed Commit Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../section-8/rollback-on-error-capability.html">
+            
+                <a href="../section-8/rollback-on-error-capability.html">
+            
+                    
+                    8.5.  回滚错误能力(Rollback-on-Error Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../section-8/validate-capability.html">
+            
+                <a href="../section-8/validate-capability.html">
+            
+                    
+                    8.6.  验证能力(Validate Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../section-8/distinct-startup-capability.html">
+            
+                <a href="../section-8/distinct-startup-capability.html">
+            
+                    
+                    8.7.  独特的启动能力(Distinct Startup Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../section-8/url-capability.html">
+            
+                <a href="../section-8/url-capability.html">
+            
+                    
+                    8.8.  URL能力(URL Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../section-8/xpath-capability.html">
+            
+                <a href="../section-8/xpath-capability.html">
+            
+                    
+                    8.9.  XPath功能(XPath Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section-9/">
+            
+                <a href="../section-9/">
+            
+                    
+                    9.  安全考虑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../section-10/">
+            
+                <a href="../section-10/">
+            
+                    
+                    10. IANA考虑事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../section-11/">
+            
+                <a href="../section-11/">
+            
+                    
+                    11. 贡献者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../section-12/">
+            
+                <a href="../section-12/">
+            
+                    
+                    12. 致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/">
+            
+                <a href="../section-13/">
+            
+                    
+                    13. 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="netconf-error-list.html">
+            
+                <a href="netconf-error-list.html">
+            
+                    
+                    附录A.NETCONF错误列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15.2" data-path="xml-schema-for-netconf-messages-layer.html">
+            
+                <a href="xml-schema-for-netconf-messages-layer.html">
+            
+                    
+                    附录B.NETCONF消息层的XML Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="yang-module-for-netconf-protocol-operations.html">
+            
+                <a href="yang-module-for-netconf-protocol-operations.html">
+            
+                    
+                    附录C.用于NETCONF协议操作的YANG模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="capability-template.html">
+            
+                <a href="capability-template.html">
+            
+                    
+                    附录D.能力模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="configuring-multiple-devices-with-netconf.html">
+            
+                <a href="configuring-multiple-devices-with-netconf.html">
+            
+                    
+                    附录E.使用NETCONF配置多个设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="changes-from-rfc4741.html">
+            
+                <a href="changes-from-rfc4741.html">
+            
+                    
+                    附录F. 基于RFC4741的变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >附录B.NETCONF消息层的XML Schema</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9644;&#x5F55;b-netconf&#x6D88;&#x606F;&#x5C42;&#x7684;xml-schema">&#x9644;&#x5F55;B. NETCONF&#x6D88;&#x606F;&#x5C42;&#x7684;XML Schema</h1>
+<p>&#x672C;&#x90E8;&#x5206;&#x662F;&#x89C4;&#x8303;&#x6027;&#x7684;&#x3002;</p>
+<blockquote>
+<p><code>&lt;CODE BEGINS&gt;</code> file &quot;netconf.xsd&quot;</p>
+</blockquote>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xs:schema</span> <span class="hljs-attr">xmlns:xs</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema&quot;</span>
+           <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+           <span class="hljs-attr">targetNamespace</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+           <span class="hljs-attr">elementFormDefault</span>=<span class="hljs-string">&quot;qualified&quot;</span>
+           <span class="hljs-attr">attributeFormDefault</span>=<span class="hljs-string">&quot;unqualified&quot;</span>
+           <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>
+           <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:annotation</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:documentation</span>&gt;</span>
+            This schema defines the syntax for the NETCONF Messages layer
+            messages &apos;hello&apos;, &apos;rpc&apos;, and &apos;rpc-reply&apos;.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:documentation</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:annotation</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!--
+    import standard XML definitions
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:import</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;http://www.w3.org/XML/1998/namespace&quot;</span>
+        <span class="hljs-attr">schemaLocation</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/xml.xsd&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:annotation</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:documentation</span>&gt;</span>
+                This import accesses the xml: attribute groups for the
+                xml:lang as declared on the error-message element.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:documentation</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:annotation</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:import</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+    message-id attribute
+    --&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;messageIdType&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:maxLength</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4095&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+       Types used for session-id
+      --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;SessionId&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:unsignedInt&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:minInclusive</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;SessionIdOrZero&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:unsignedInt&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+       &lt;rpc&gt; element
+      --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcType&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;rpcOperation&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;message-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;messageIdType&quot;</span> <span class="hljs-attr">use</span>=<span class="hljs-string">&quot;required&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!--
+        Arbitrary attributes can be supplied with &lt;rpc&gt; element.
+        --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:anyAttribute</span> <span class="hljs-attr">processContents</span>=<span class="hljs-string">&quot;lax&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpc&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcType&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!--
+       data types and elements used to construct rpc-errors
+      --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ErrorType&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;transport&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;rpc&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;protocol&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;application&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ErrorTag&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;in-use&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;invalid-value&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;too-big&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;missing-attribute&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;bad-attribute&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;unknown-attribute&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;missing-element&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;bad-element&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;unknown-element&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;unknown-namespace&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;access-denied&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;lock-denied&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;resource-denied&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;rollback-failed&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;data-exists&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;data-missing&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;operation-not-supported&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;operation-failed&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;partial-operation&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;malformed-message&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ErrorSeverity&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;error&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;warning&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;errorInfoType&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:choice</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;session-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;SessionIdOrZero&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bad-attribute&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bad-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ok-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;err-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;noop-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bad-namespace&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:string&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:choice</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- elements from any other namespace are also allowed
+        to follow the NETCONF elements --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:any</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;##other&quot;</span> <span class="hljs-attr">processContents</span>=<span class="hljs-string">&quot;lax&quot;</span>
+        <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcErrorType&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-type&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;ErrorType&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-tag&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;ErrorTag&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-severity&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;ErrorSeverity&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-app-tag&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:string&quot;</span>
+                    <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-path&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:string&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-message&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleContent</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">xs:extension</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;xml:lang&quot;</span> <span class="hljs-attr">use</span>=<span class="hljs-string">&quot;optional&quot;</span>/&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">xs:extension</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleContent</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:element</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-info&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;errorInfoType&quot;</span>
+                    <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+       operation attribute used in &lt;edit-config&gt;
+      --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;editOperationType&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;merge&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;replace&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;create&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;delete&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;remove&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;operation&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;editOperationType&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!--
+       &lt;rpc-reply&gt; element
+      --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcReplyType&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:choice</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ok&quot;</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;rpc-error&quot;</span>  <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;rpcResponse&quot;</span>   <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:choice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;message-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;messageIdType&quot;</span>
+                  <span class="hljs-attr">use</span>=<span class="hljs-string">&quot;optional&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!--
+        Any attributes supplied with &lt;rpc&gt; element must be returned
+        on &lt;rpc-reply&gt;.
+        --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:anyAttribute</span> <span class="hljs-attr">processContents</span>=<span class="hljs-string">&quot;lax&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpc-reply&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcReplyType&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!--
+    &lt;rpc-error&gt; element
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpc-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcErrorType&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!--
+    rpcOperationType: used as a base type for all
+    NETCONF operations
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcOperationType&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcOperation&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcOperationType&quot;</span> <span class="hljs-attr">abstract</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!--
+    rpcResponseType: used as a base type for all
+    NETCONF responses
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcResponseType&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcResponse&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcResponseType&quot;</span> <span class="hljs-attr">abstract</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+          <span class="hljs-comment">&lt;!--
+             &lt;hello&gt; element
+            --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;hello&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;capabilities&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;capability&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:anyURI&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">xs:element</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;session-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;SessionId&quot;</span>
+                <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:element</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">xs:schema</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p><code>&lt;CODE ENDS&gt;</code></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="netconf-error-list.html" class="navigation navigation-prev " aria-label="Previous page: 附录A.NETCONF错误列表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="yang-module-for-netconf-protocol-operations.html" class="navigation navigation-next " aria-label="Next page: 附录C.用于NETCONF协议操作的YANG模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"附录B.NETCONF消息层的XML Schema","level":"1.15.2","depth":2,"next":{"title":"附录C.用于NETCONF协议操作的YANG模块","level":"1.15.3","depth":2,"path":"appendix/yang-module-for-netconf-protocol-operations.md","ref":"appendix/yang-module-for-netconf-protocol-operations.md","articles":[]},"previous":{"title":"附录A.NETCONF错误列表","level":"1.15.1","depth":2,"path":"appendix/netconf-error-list.md","ref":"appendix/netconf-error-list.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appendix/xml-schema-for-netconf-messages-layer.md","mtime":"2017-12-11T16:12:10.898Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-11T16:50:31.383Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
