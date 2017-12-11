@@ -1,0 +1,959 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.3.  子树过滤处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subtree-filtering-examples.html" />
+    
+    
+    <link rel="prev" href="subtree-filter-components.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC6241中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/terminology.html">
+            
+                <a href="../section-1/terminology.html">
+            
+                    
+                    1.1 术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../section-1/protocol-overview.html">
+            
+                <a href="../section-1/protocol-overview.html">
+            
+                    
+                    1.2 协议概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../section-1/capabilities.html">
+            
+                <a href="../section-1/capabilities.html">
+            
+                    
+                    1.3 能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../section-1/separation-of-configuration-and-state-data.html">
+            
+                <a href="../section-1/separation-of-configuration-and-state-data.html">
+            
+                    
+                    1.4 配置和状态数据的分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section-2/">
+            
+                <a href="../section-2/">
+            
+                    
+                    2. 传输协议要求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../section-2/connection-oriented-operation.html">
+            
+                <a href="../section-2/connection-oriented-operation.html">
+            
+                    
+                    2.1.  面向连接的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../section-2/authentication-integrity-and-confidentiality.html">
+            
+                <a href="../section-2/authentication-integrity-and-confidentiality.html">
+            
+                    
+                    2.2.  身份验证，完整性和机密性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../section-2/mandatory-transport-protocol.html">
+            
+                <a href="../section-2/mandatory-transport-protocol.html">
+            
+                    
+                    2.3.  强制性传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3.  XML注意事项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/namespace.html">
+            
+                <a href="../section-3/namespace.html">
+            
+                    
+                    3.1.  命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section-3/document-type-declarations.html">
+            
+                <a href="../section-3/document-type-declarations.html">
+            
+                    
+                    3.2.  文件类型声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section-4/">
+            
+                <a href="../section-4/">
+            
+                    
+                    4.  RPC模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section-4/rpc.html">
+            
+                <a href="../section-4/rpc.html">
+            
+                    
+                    4.1.  < rpc >元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section-4/rpc-reply.html">
+            
+                <a href="../section-4/rpc-reply.html">
+            
+                    
+                    4.2.  < rpc-reply > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../section-4/rpc-error.html">
+            
+                <a href="../section-4/rpc-error.html">
+            
+                    
+                    4.3.  < rpc-error > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../section-4/ok.html">
+            
+                <a href="../section-4/ok.html">
+            
+                    
+                    4.4.  < ok > 元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../section-4/pipelining.html">
+            
+                <a href="../section-4/pipelining.html">
+            
+                    
+                    4.5.  流水线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5.  配置模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/configuration-datastores.html">
+            
+                <a href="../section-5/configuration-datastores.html">
+            
+                    
+                    5.1.  配置数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/data-modeling.html">
+            
+                <a href="../section-5/data-modeling.html">
+            
+                    
+                    5.2.  数据建模
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    6.  子树过滤
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    6.1.  概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="subtree-filter-components.html">
+            
+                <a href="subtree-filter-components.html">
+            
+                    
+                    6.2.  子树过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="subtree-filter-processing.html">
+            
+                <a href="subtree-filter-processing.html">
+            
+                    
+                    6.3.  子树过滤处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="subtree-filtering-examples.html">
+            
+                <a href="subtree-filtering-examples.html">
+            
+                    
+                    6.4.  子树过滤示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section-7/">
+            
+                <a href="../section-7/">
+            
+                    
+                    7.  协议操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section-7/get-config.html">
+            
+                <a href="../section-7/get-config.html">
+            
+                    
+                    7.1.  < get-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section-7/edit-config.html">
+            
+                <a href="../section-7/edit-config.html">
+            
+                    
+                    7.2.  < edit-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section-7/copy-config.html">
+            
+                <a href="../section-7/copy-config.html">
+            
+                    
+                    7.3.  < copy-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section-7/delete-config.html">
+            
+                <a href="../section-7/delete-config.html">
+            
+                    
+                    7.4.  < delete-config >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../section-7/lock.html">
+            
+                <a href="../section-7/lock.html">
+            
+                    
+                    7.5.  < lock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../section-7/unlock.html">
+            
+                <a href="../section-7/unlock.html">
+            
+                    
+                    7.6.  < unlock >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../section-7/get.html">
+            
+                <a href="../section-7/get.html">
+            
+                    
+                    7.7.  < get >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../section-7/close-session.html">
+            
+                <a href="../section-7/close-session.html">
+            
+                    
+                    7.8.  < close-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../section-7/kill-session.html">
+            
+                <a href="../section-7/kill-session.html">
+            
+                    
+                    7.9.  < kill-session >
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section-8/">
+            
+                <a href="../section-8/">
+            
+                    
+                    8.  能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section-8/capability-exchange.html">
+            
+                <a href="../section-8/capability-exchange.html">
+            
+                    
+                    8.1.  能力交换(Capabilities Exchange)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section-8/writable-running-capability.html">
+            
+                <a href="../section-8/writable-running-capability.html">
+            
+                    
+                    8.2.  可写入运行能力(Writable-Running Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section-8/candidate-configuration-capability.html">
+            
+                <a href="../section-8/candidate-configuration-capability.html">
+            
+                    
+                    8.3.  候选配置能力(Candidate Configuration Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../section-8/onfirmed-commit-capability.html">
+            
+                <a href="../section-8/onfirmed-commit-capability.html">
+            
+                    
+                    8.4.  确认提交能力(Confirmed Commit Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../section-8/rollback-on-error-capability.html">
+            
+                <a href="../section-8/rollback-on-error-capability.html">
+            
+                    
+                    8.5.  回滚错误能力(Rollback-on-Error Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../section-8/validate-capability.html">
+            
+                <a href="../section-8/validate-capability.html">
+            
+                    
+                    8.6.  验证能力(Validate Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../section-8/distinct-startup-capability.html">
+            
+                <a href="../section-8/distinct-startup-capability.html">
+            
+                    
+                    8.7.  独特的启动能力(Distinct Startup Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../section-8/url-capability.html">
+            
+                <a href="../section-8/url-capability.html">
+            
+                    
+                    8.8.  URL能力(URL Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../section-8/xpath-capability.html">
+            
+                <a href="../section-8/xpath-capability.html">
+            
+                    
+                    8.9.  XPath功能(XPath Capability)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section-9/README.md">
+            
+                <span>
+            
+                    
+                    9.  Security Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../section-10/README.md">
+            
+                <span>
+            
+                    
+                    10. IANA Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../section-11/README.md">
+            
+                <span>
+            
+                    
+                    11. Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../section-11/acknowledgements.md">
+            
+                <span>
+            
+                    
+                    12. Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/README.md">
+            
+                <span>
+            
+                    
+                    13. References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../appendix/README.md">
+            
+                <span>
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6.3.  子树过滤处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="63-&#x5B50;&#x6811;&#x8FC7;&#x6EE4;&#x5904;&#x7406;">6.3 &#x5B50;&#x6811;&#x8FC7;&#x6EE4;&#x5904;&#x7406;</h1>
+<p>&#x8FC7;&#x6EE4;&#x5668;&#x8F93;&#x51FA;&#xFF08;&#x6240;&#x9009;&#x8282;&#x70B9;&#x96C6;&#x5408;&#xFF09;&#x6700;&#x521D;&#x662F;&#x7A7A;&#x7684;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x5B50;&#x6811;&#x8FC7;&#x6EE4;&#x5668;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7247;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E9B;&#x7247;&#x6BB5;&#x4EE3;&#x8868;&#x5C06;&#x5728;&#x8FC7;&#x6EE4;&#x5668;&#x8F93;&#x51FA;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x90E8;&#x5206;&#xFF08;&#x5305;&#x542B;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#xFF09;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x5668;&#x5C06;&#x6BCF;&#x4E2A;&#x5B50;&#x6811;&#x6570;&#x636E;&#x7247;&#x6BB5;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x5185;&#x90E8;&#x6570;&#x636E;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;&#x5982;&#x679C;&#x6574;&#x4E2A;&#x5B50;&#x6811;&#x6570;&#x636E;&#x7247;&#x6BB5;&#x8FC7;&#x6EE4;&#x5668;&#xFF08;&#x4ECE;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6839;&#x5230;&#x6700;&#x5185;&#x5C42;&#x7684;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#xFF09;&#x4E0E;&#x53D7;&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x76F8;&#x5E94;&#x90E8;&#x5206;&#x5B8C;&#x5168;&#x5339;&#x914D;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x8282;&#x70B9;&#x53CA;&#x5176;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x5C06;&#x5305;&#x542B;&#x5728;&#x7ED3;&#x679C;&#x6570;&#x636E;&#x4E2D;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x5668;&#x5C06;&#x6240;&#x6709;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7236;&#x8282;&#x70B9;&#xFF08;&#x540C;&#x7EA7;&#x7EC4;&#xFF09;&#x7684;&#x8282;&#x70B9;&#x4E00;&#x8D77;&#x5904;&#x7406;&#xFF0C;&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x5230;&#x53F6;&#x8282;&#x70B9;&#x3002;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#x7684;&#x6839;&#x5143;&#x7D20;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5728;&#x76F8;&#x540C;&#x7684;&#x540C;&#x7EA7;&#x96C6;&#x5408;&#x4E2D;&#xFF08;&#x5047;&#x8BBE;&#x5B83;&#x4EEC;&#x5728;&#x76F8;&#x540C;&#x7684;&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#x4E2D;&#xFF09;&#xFF0C;&#x5373;&#x4F7F;&#x5B83;&#x4EEC;&#x6CA1;&#x6709;&#x5171;&#x540C;&#x7684;&#x7236;&#x7EA7;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5144;&#x5F1F;&#x96C6;&#x5408;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x786E;&#x5B9A;&#x8FC7;&#x6EE4;&#x5668;&#x8F93;&#x51FA;&#x4E2D;&#x5305;&#x542B;&#xFF08;&#x6216;&#x53EF;&#x80FD;&#x5305;&#x62EC;&#xFF09;&#x54EA;&#x4E9B;&#x8282;&#x70B9;&#xFF0C;&#x4EE5;&#x53CA;&#x4ECE;&#x8FC7;&#x6EE4;&#x5668;&#x8F93;&#x51FA;&#x4E2D;&#x6392;&#x9664;&#xFF08;&#x4FEE;&#x526A;&#xFF09;&#x54EA;&#x4E9B;&#x5144;&#x5F1F;&#x5B50;&#x6811;&#x3002;&#x670D;&#x52A1;&#x5668;&#x9996;&#x5148;&#x786E;&#x5B9A;&#x5144;&#x5F1F;&#x96C6;&#x5408;&#x4E2D;&#x5B58;&#x5728;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x5176;&#x7C7B;&#x578B;&#x7684;&#x89C4;&#x5219;&#x5904;&#x7406;&#x8282;&#x70B9;&#x3002;&#x5982;&#x679C;&#x9009;&#x62E9;&#x4E86;&#x5144;&#x5F1F;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x8BE5;&#x8FC7;&#x7A0B;&#x9012;&#x5F52;&#x5730;&#x5E94;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x6240;&#x9009;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x96C6;&#x5408;&#x3002;&#x8BE5;&#x7B97;&#x6CD5;&#x7EE7;&#x7EED;&#xFF0C;&#x76F4;&#x5230;&#x5728;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6240;&#x6709;&#x5B50;&#x6811;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5144;&#x5F1F;&#x96C6;&#x5747;&#x5DF2;&#x88AB;&#x5904;&#x7406;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="subtree-filter-components.html" class="navigation navigation-prev " aria-label="Previous page: 6.2.  子树过滤器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subtree-filtering-examples.html" class="navigation navigation-next " aria-label="Next page: 6.4.  子树过滤示例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.3.  子树过滤处理","level":"1.7.3","depth":2,"next":{"title":"6.4.  子树过滤示例","level":"1.7.4","depth":2,"path":"section-6/subtree-filtering-examples.md","ref":"section-6/subtree-filtering-examples.md","articles":[]},"previous":{"title":"6.2.  子树过滤器","level":"1.7.2","depth":2,"path":"section-6/subtree-filter-components.md","ref":"section-6/subtree-filter-components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-6/subtree-filter-processing.md","mtime":"2017-12-08T16:56:08.270Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-10T18:04:31.094Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
