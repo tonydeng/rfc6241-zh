@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -818,7 +822,104 @@
                 <a href="../appendix/">
             
                     
-                    Appendix
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../appendix/netconf-error-list.html">
+            
+                <a href="../appendix/netconf-error-list.html">
+            
+                    
+                    附录A.NETCONF错误列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../appendix/xml-schema-for-netconf-messages-layer.html">
+            
+                <a href="../appendix/xml-schema-for-netconf-messages-layer.html">
+            
+                    
+                    附录B.NETCONF消息层的XML Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../appendix/yang-module-for-netconf-protocol-operations.html">
+            
+                <a href="../appendix/yang-module-for-netconf-protocol-operations.html">
+            
+                    
+                    附录C.用于NETCONF协议操作的YANG模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../appendix/capability-template.html">
+            
+                <a href="../appendix/capability-template.html">
+            
+                    
+                    附录D.能力模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../appendix/configuring-multiple-devices-with-netconf.html">
+            
+                <a href="../appendix/configuring-multiple-devices-with-netconf.html">
+            
+                    
+                    附录E.使用NETCONF配置多个设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../appendix/changes-from-rfc4741.html">
+            
+                <a href="../appendix/changes-from-rfc4741.html">
+            
+                    
+                    附录F. 基于RFC4741的变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../CHANGELOG.html">
+            
+                <a href="../CHANGELOG.html">
+            
+                    
+                    Changelog
             
                 </a>
             
@@ -871,7 +972,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="61-&#x6982;&#x8FF0;">6.1 &#x6982;&#x8FF0;</h1>
+                                <h1 id="61-&#x6982;&#x8FF0;"><a name="61-&#x6982;&#x8FF0;" class="plugin-anchor" href="#61-&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1 &#x6982;&#x8FF0;</h1>
 <p><code>XML subtree filtering</code>&#x662F;&#x4E00;&#x79CD;&#x5141;&#x8BB8;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9009;&#x62E9;&#x7279;&#x5B9A;<code>XML</code>&#x5B50;&#x6811;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x4EE5;&#x5305;&#x542B;<code>&lt;rpc-reply&gt;</code>&#x4E2D;&#x7684;<code>&lt;get&gt;</code>&#x6216;<code>&lt;get-config&gt;</code>&#x64CD;&#x4F5C;&#x3002;&#x5305;&#x542B;&#x4E00;&#x5C0F;&#x7EC4;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x5185;&#x5BB9;&#x7CBE;&#x786E;&#x5339;&#x914D;&#x548C;&#x9009;&#x62E9;&#xFF0C;&#x8FD9;&#x5141;&#x8BB8;&#x4E00;&#x4E9B;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x4F46;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x6709;&#x9650;&#x7684;&#x9009;&#x62E9;&#x673A;&#x5236;&#x3002;&#x670D;&#x52A1;&#x5668;&#x5728;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x7279;&#x5B9A;&#x4E8E;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x8BED;&#x4E49;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#x800C;&#x96C6;&#x4E2D;&#x7684;&#x5B9E;&#x65BD;&#x7B56;&#x7565;&#x3002;</p>
 <p>&#x4ECE;&#x6982;&#x5FF5;&#x4E0A;&#x8BB2;&#xFF0C;&#x5B50;&#x6811;&#x8FC7;&#x6EE4;&#x5668;&#x7531;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x5B50;&#x6811;&#x7EC4;&#x6210;&#xFF0C;&#x8868;&#x793A;&#x8FC7;&#x6EE4;&#x5668;&#x9009;&#x62E9;&#x6807;&#x51C6;&#x3002;&#x5728;&#x5B50;&#x6811;&#x5185;&#x7684;&#x6BCF;&#x4E2A;&#x5BB9;&#x5668;&#x7EA7;&#x522B;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5BF9;&#x8BE5;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x96C6;&#x5408;&#x8FDB;&#x884C;&#x903B;&#x8F91;&#x5904;&#x7406;&#xFF0C;&#x4EE5;&#x786E;&#x5B9A;&#x5B83;&#x7684;&#x5B50;&#x6811;&#x548C;&#x6839;&#x5143;&#x7D20;&#x7684;&#x8DEF;&#x5F84;&#x662F;&#x5426;&#x5305;&#x62EC;&#x5728;&#x8FC7;&#x6EE4;&#x5668;&#x8F93;&#x51FA;&#x4E2D;&#x3002;</p>
 <p>&#x5728;&#x5B50;&#x6811;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5305;&#x5BB9;&#x6027;&#x8FC7;&#x6EE4;&#x5668;&#x3002;&#x53EA;&#x6709;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x533A;&#x5185;&#x7684;&#x57FA;&#x7840;&#x6570;&#x636E;&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x5173;&#x8054;&#x8282;&#x70B9;&#x624D;&#x88AB;&#x7B5B;&#x9009;&#x5668;&#x9009;&#x4E2D;&#x3002;&#x9664;&#x4E86;&#x5C06;&#x8FC7;&#x6EE4;&#x5668;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x540D;&#x79F0;&#x8C03;&#x6574;&#x4E3A;&#x4ECE;<code>&lt;filter&gt;</code>&#x4E0B;&#x7684;&#x56FE;&#x5C42;&#x5F00;&#x59CB;&#x4E4B;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x8282;&#x70B9;&#x4E0E;&#x8FC7;&#x6EE4;&#x5668;&#x6570;&#x636E;&#x4E2D;&#x7ED9;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x7684;&#x9009;&#x62E9;&#x6807;&#x51C6;&#x548C;&#x5C42;&#x6B21;&#x5339;&#x914D;&#xFF0C;&#x5219;&#x4F1A;&#x9009;&#x62E9;&#x8BE5;&#x8282;&#x70B9;&#x3002;</p>
@@ -919,7 +1020,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6.1.  概述","level":"1.7.1","depth":2,"next":{"title":"6.2.  子树过滤器","level":"1.7.2","depth":2,"path":"section-6/subtree-filter-components.md","ref":"section-6/subtree-filter-components.md","articles":[]},"previous":{"title":"6.  子树过滤","level":"1.7","depth":1,"path":"section-6/README.md","ref":"section-6/README.md","articles":[{"title":"6.1.  概述","level":"1.7.1","depth":2,"path":"section-6/overview.md","ref":"section-6/overview.md","articles":[]},{"title":"6.2.  子树过滤器","level":"1.7.2","depth":2,"path":"section-6/subtree-filter-components.md","ref":"section-6/subtree-filter-components.md","articles":[]},{"title":"6.3.  子树过滤处理","level":"1.7.3","depth":2,"path":"section-6/subtree-filter-processing.md","ref":"section-6/subtree-filter-processing.md","articles":[]},{"title":"6.4.  子树过滤示例","level":"1.7.4","depth":2,"path":"section-6/subtree-filtering-examples.md","ref":"section-6/subtree-filtering-examples.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-6/overview.md","mtime":"2017-12-09T04:28:03.554Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T04:13:42.761Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6.1.  概述","level":"1.7.1","depth":2,"next":{"title":"6.2.  子树过滤器","level":"1.7.2","depth":2,"path":"section-6/subtree-filter-components.md","ref":"section-6/subtree-filter-components.md","articles":[]},"previous":{"title":"6.  子树过滤","level":"1.7","depth":1,"path":"section-6/README.md","ref":"section-6/README.md","articles":[{"title":"6.1.  概述","level":"1.7.1","depth":2,"path":"section-6/overview.md","ref":"section-6/overview.md","articles":[]},{"title":"6.2.  子树过滤器","level":"1.7.2","depth":2,"path":"section-6/subtree-filter-components.md","ref":"section-6/subtree-filter-components.md","articles":[]},{"title":"6.3.  子树过滤处理","level":"1.7.3","depth":2,"path":"section-6/subtree-filter-processing.md","ref":"section-6/subtree-filter-processing.md","articles":[]},{"title":"6.4.  子树过滤示例","level":"1.7.4","depth":2,"path":"section-6/subtree-filtering-examples.md","ref":"section-6/subtree-filtering-examples.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-6/overview.md","mtime":"2017-12-08T16:56:08.269Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:31:37.811Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -927,6 +1028,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -818,7 +822,104 @@
                 <a href="../appendix/">
             
                     
-                    Appendix
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../appendix/netconf-error-list.html">
+            
+                <a href="../appendix/netconf-error-list.html">
+            
+                    
+                    附录A.NETCONF错误列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../appendix/xml-schema-for-netconf-messages-layer.html">
+            
+                <a href="../appendix/xml-schema-for-netconf-messages-layer.html">
+            
+                    
+                    附录B.NETCONF消息层的XML Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../appendix/yang-module-for-netconf-protocol-operations.html">
+            
+                <a href="../appendix/yang-module-for-netconf-protocol-operations.html">
+            
+                    
+                    附录C.用于NETCONF协议操作的YANG模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../appendix/capability-template.html">
+            
+                <a href="../appendix/capability-template.html">
+            
+                    
+                    附录D.能力模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../appendix/configuring-multiple-devices-with-netconf.html">
+            
+                <a href="../appendix/configuring-multiple-devices-with-netconf.html">
+            
+                    
+                    附录E.使用NETCONF配置多个设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../appendix/changes-from-rfc4741.html">
+            
+                <a href="../appendix/changes-from-rfc4741.html">
+            
+                    
+                    附录F. 基于RFC4741的变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../CHANGELOG.html">
+            
+                <a href="../CHANGELOG.html">
+            
+                    
+                    Changelog
             
                 </a>
             
@@ -871,7 +972,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="81-&#x80FD;&#x529B;&#x4EA4;&#x6362;capabilities-exchange">8.1. &#x80FD;&#x529B;&#x4EA4;&#x6362;(<code>Capabilities Exchange</code>)</h1>
+                                <h1 id="81-&#x80FD;&#x529B;&#x4EA4;&#x6362;capabilities-exchange"><a name="81-&#x80FD;&#x529B;&#x4EA4;&#x6362;capabilities-exchange" class="plugin-anchor" href="#81-&#x80FD;&#x529B;&#x4EA4;&#x6362;capabilities-exchange"><i class="fa fa-link" aria-hidden="true"></i></a>8.1. &#x80FD;&#x529B;&#x4EA4;&#x6362;(<code>Capabilities Exchange</code>)</h1>
 <p>&#x529F;&#x80FD;&#x5728;&#x4F1A;&#x8BDD;&#x5EFA;&#x7ACB;&#x671F;&#x95F4;&#x7531;&#x6BCF;&#x4E2A;&#x5BF9;&#x7B49;&#x4F53;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F;&#x4E2D;&#x516C;&#x5E03;&#x3002;&#x5F53;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x6253;&#x5F00;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x7B49;&#x4F53;(<code>peer</code>)&#xFF08;&#x5BA2;&#x6237;&#x673A;&#x548C;&#x670D;&#x52A1;&#x5668;&#xFF09;&#x90FD;&#x5FC5;&#x987B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8BE5;&#x5BF9;&#x7B49;&#x4F53;&#x80FD;&#x529B;&#x5217;&#x8868;&#x7684;<code>&lt;hello&gt;</code>&#x5143;&#x7D20;&#x3002;&#x6BCF;&#x4E2A;&#x5BF9;&#x7B49;&#x4F53;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x53D1;&#x9001;&#x57FA;&#x672C;&#x7684;<code>NETCONF</code>&#x80FD;&#x529B;&#xFF0C;&#x201C;<code>urn:ietf:params:netconf:base:1.1</code>&#x201D;&#x3002;&#x4E00;&#x4E2A;&#x5BF9;&#x7B49;(<code>peer</code>)&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4EE5;&#x524D;&#x7684;<code>NETCONF</code>&#x7248;&#x672C;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x8868;&#x660E;&#x5B83;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x3002;</p>
 <p>&#x4E24;&#x4E2A;<code>NETCONF</code>&#x5BF9;&#x7B49;&#x4F53;(<code>peer</code>)&#x90FD;&#x5FC5;&#x987B;&#x9A8C;&#x8BC1;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x7B49;&#x4F53;(<code>peer</code>)&#x5DF2;&#x7ECF;&#x516C;&#x5E03;&#x4E86;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x3002;&#x5728;&#x6BD4;&#x8F83;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x80FD;&#x529B;<code>URI</code>&#x65F6;&#xFF0C;&#x53EA;&#x6709;&#x57FA;&#x672C;&#x90E8;&#x5206;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x5728;<code>URI</code>&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x672B;&#x5C3E;&#x88AB;&#x7F16;&#x7801;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5171;&#x540C;&#x7684;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x80FD;&#x529B;&#xFF0C;<code>NETCONF</code>&#x5BF9;&#x7B49;&#x4F53;&#x4E0D;&#x80FD;&#x7EE7;&#x7EED;&#x4F1A;&#x8BDD;&#x3002;&#x5982;&#x679C;&#x5B58;&#x5728;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x7684;&#x534F;&#x8BAE;&#x7248;&#x672C;<code>URI</code>&#xFF0C;&#x5219;&#x6700;&#x9AD8;&#x7F16;&#x53F7;&#xFF08;&#x6700;&#x65B0;&#xFF09;&#x7684;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x5FC5;&#x987B;&#x7531;&#x4E24;&#x4E2A;&#x5BF9;&#x7B49;&#x4F53;&#x4F7F;&#x7528;&#x3002;</p>
 <p>&#x53D1;&#x9001;<code>&lt;hello&gt;</code>&#x5143;&#x7D20;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6B64;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x4F1A;&#x8BDD;ID&#x7684;<code>&lt;session-id&gt;</code>&#x5143;&#x7D20;&#x3002;&#x53D1;&#x9001;<code>&lt;hello&gt;</code>&#x5143;&#x7D20;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x7EDD;&#x4E0D;&#x80FD;&#x5305;&#x542B;<code>&lt;session-id&gt;</code>&#x5143;&#x7D20;&#x3002;</p>
@@ -936,7 +1037,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8.1.  能力交换(Capabilities Exchange)","level":"1.9.1","depth":2,"next":{"title":"8.2.  可写入运行能力(Writable-Running Capability)","level":"1.9.2","depth":2,"path":"section-8/writable-running-capability.md","ref":"section-8/writable-running-capability.md","articles":[]},"previous":{"title":"8.  能力","level":"1.9","depth":1,"path":"section-8/README.md","ref":"section-8/README.md","articles":[{"title":"8.1.  能力交换(Capabilities Exchange)","level":"1.9.1","depth":2,"path":"section-8/capability-exchange.md","ref":"section-8/capability-exchange.md","articles":[]},{"title":"8.2.  可写入运行能力(Writable-Running Capability)","level":"1.9.2","depth":2,"path":"section-8/writable-running-capability.md","ref":"section-8/writable-running-capability.md","articles":[]},{"title":"8.3.  候选配置能力(Candidate Configuration Capability)","level":"1.9.3","depth":2,"path":"section-8/candidate-configuration-capability.md","ref":"section-8/candidate-configuration-capability.md","articles":[]},{"title":"8.4.  确认提交能力(Confirmed Commit Capability)","level":"1.9.4","depth":2,"path":"section-8/onfirmed-commit-capability.md","ref":"section-8/onfirmed-commit-capability.md","articles":[]},{"title":"8.5.  回滚错误能力(Rollback-on-Error Capability)","level":"1.9.5","depth":2,"path":"section-8/rollback-on-error-capability.md","ref":"section-8/rollback-on-error-capability.md","articles":[]},{"title":"8.6.  验证能力(Validate Capability)","level":"1.9.6","depth":2,"path":"section-8/validate-capability.md","ref":"section-8/validate-capability.md","articles":[]},{"title":"8.7.  独特的启动能力(Distinct Startup Capability)","level":"1.9.7","depth":2,"path":"section-8/distinct-startup-capability.md","ref":"section-8/distinct-startup-capability.md","articles":[]},{"title":"8.8.  URL能力(URL Capability)","level":"1.9.8","depth":2,"path":"section-8/url-capability.md","ref":"section-8/url-capability.md","articles":[]},{"title":"8.9.  XPath功能(XPath Capability)","level":"1.9.9","depth":2,"path":"section-8/xpath-capability.md","ref":"section-8/xpath-capability.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-8/capability-exchange.md","mtime":"2017-12-11T01:58:09.339Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T04:13:42.761Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8.1.  能力交换(Capabilities Exchange)","level":"1.9.1","depth":2,"next":{"title":"8.2.  可写入运行能力(Writable-Running Capability)","level":"1.9.2","depth":2,"path":"section-8/writable-running-capability.md","ref":"section-8/writable-running-capability.md","articles":[]},"previous":{"title":"8.  能力","level":"1.9","depth":1,"path":"section-8/README.md","ref":"section-8/README.md","articles":[{"title":"8.1.  能力交换(Capabilities Exchange)","level":"1.9.1","depth":2,"path":"section-8/capability-exchange.md","ref":"section-8/capability-exchange.md","articles":[]},{"title":"8.2.  可写入运行能力(Writable-Running Capability)","level":"1.9.2","depth":2,"path":"section-8/writable-running-capability.md","ref":"section-8/writable-running-capability.md","articles":[]},{"title":"8.3.  候选配置能力(Candidate Configuration Capability)","level":"1.9.3","depth":2,"path":"section-8/candidate-configuration-capability.md","ref":"section-8/candidate-configuration-capability.md","articles":[]},{"title":"8.4.  确认提交能力(Confirmed Commit Capability)","level":"1.9.4","depth":2,"path":"section-8/onfirmed-commit-capability.md","ref":"section-8/onfirmed-commit-capability.md","articles":[]},{"title":"8.5.  回滚错误能力(Rollback-on-Error Capability)","level":"1.9.5","depth":2,"path":"section-8/rollback-on-error-capability.md","ref":"section-8/rollback-on-error-capability.md","articles":[]},{"title":"8.6.  验证能力(Validate Capability)","level":"1.9.6","depth":2,"path":"section-8/validate-capability.md","ref":"section-8/validate-capability.md","articles":[]},{"title":"8.7.  独特的启动能力(Distinct Startup Capability)","level":"1.9.7","depth":2,"path":"section-8/distinct-startup-capability.md","ref":"section-8/distinct-startup-capability.md","articles":[]},{"title":"8.8.  URL能力(URL Capability)","level":"1.9.8","depth":2,"path":"section-8/url-capability.md","ref":"section-8/url-capability.md","articles":[]},{"title":"8.9.  XPath功能(XPath Capability)","level":"1.9.9","depth":2,"path":"section-8/xpath-capability.md","ref":"section-8/xpath-capability.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-8/capability-exchange.md","mtime":"2017-12-10T17:50:16.579Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:31:37.811Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -944,6 +1045,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

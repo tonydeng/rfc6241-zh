@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Appendix · GitBook</title>
+        <title>附录 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
@@ -56,6 +60,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="netconf-error-list.html" />
     
     
     <link rel="prev" href="../section-13/" />
@@ -816,7 +822,104 @@
                 <a href="./">
             
                     
-                    Appendix
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="netconf-error-list.html">
+            
+                <a href="netconf-error-list.html">
+            
+                    
+                    附录A.NETCONF错误列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="xml-schema-for-netconf-messages-layer.html">
+            
+                <a href="xml-schema-for-netconf-messages-layer.html">
+            
+                    
+                    附录B.NETCONF消息层的XML Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="yang-module-for-netconf-protocol-operations.html">
+            
+                <a href="yang-module-for-netconf-protocol-operations.html">
+            
+                    
+                    附录C.用于NETCONF协议操作的YANG模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="capability-template.html">
+            
+                <a href="capability-template.html">
+            
+                    
+                    附录D.能力模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="configuring-multiple-devices-with-netconf.html">
+            
+                <a href="configuring-multiple-devices-with-netconf.html">
+            
+                    
+                    附录E.使用NETCONF配置多个设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="changes-from-rfc4741.html">
+            
+                <a href="changes-from-rfc4741.html">
+            
+                    
+                    附录F. 基于RFC4741的变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../CHANGELOG.html">
+            
+                <a href="../CHANGELOG.html">
+            
+                    
+                    Changelog
             
                 </a>
             
@@ -854,7 +957,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Appendix</a>
+        <a href=".." >附录</a>
     </h1>
 </div>
 
@@ -869,386 +972,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x9644;&#x5F55;">&#x9644;&#x5F55;.</h2>
-<h2 id="&#x9644;&#x5F55;a-netconf&#x9519;&#x8BEF;&#x5217;&#x8868;">&#x9644;&#x5F55;A. NETCONF&#x9519;&#x8BEF;&#x5217;&#x8868;</h2>
-<p>&#x672C;&#x90E8;&#x5206;&#x662F;&#x89C4;&#x8303;&#x6027;&#x7684;&#x3002;</p>
-<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x9519;&#x8BEF;&#x6807;&#x7B7E;&#xFF0C;&#x90FD;&#x4F1A;&#x5217;&#x51FA;&#x6709;&#x6548;&#x7684;&#x9519;&#x8BEF;&#x7C7B;&#x578B;&#x548C;&#x9519;&#x8BEF;&#x4E25;&#x91CD;&#x6027;&#x503C;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x5FC5;&#x9700;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF08;&#x5982;&#x679C;&#x6709;&#xFF09;&#x3002;</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">error-tag</th>
-<th style="text-align:left">error-type</th>
-<th style="text-align:left">error-severity</th>
-<th style="text-align:left">error-info</th>
-<th style="text-align:left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">in-use</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">The request requires a resource that already is in use.</td>
-</tr>
-<tr>
-<td style="text-align:left">invalid-value</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">The request specifies an unacceptable value for one or more parameters.</td>
-</tr>
-<tr>
-<td style="text-align:left">too-big</td>
-<td style="text-align:left">transport, rpc, protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">The request or response (that would be generated) is too large for the implementation to handle.</td>
-</tr>
-<tr>
-<td style="text-align:left">missing-attribute</td>
-<td style="text-align:left">rpc, protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-attribute> : name of the missing attribute <bad-element> : name of the element that is supposed to contain the missing attribute</bad-element></bad-attribute></td>
-<td style="text-align:left">An expected attribute is missing.</td>
-</tr>
-<tr>
-<td style="text-align:left">bad-attribute</td>
-<td style="text-align:left">rpc, protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-attribute> : name of the attribute w/ bad value <bad-element> : name of the element that contains the attribute with the bad value</bad-element></bad-attribute></td>
-<td style="text-align:left">An attribute value is not correct; e.g., wrong type,  out of range, pattern mismatch</td>
-</tr>
-<tr>
-<td style="text-align:left">unknown-attribute</td>
-<td style="text-align:left">rpc, protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-attribute> : name of the unexpected attribute <bad-element> : name of the element that contains the unexpected attribute</bad-element></bad-attribute></td>
-<td style="text-align:left">An unexpected attribute is present.</td>
-</tr>
-<tr>
-<td style="text-align:left">missing-element</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-element> : name of the missing element</bad-element></td>
-<td style="text-align:left">An expected element is missing.</td>
-</tr>
-<tr>
-<td style="text-align:left">bad-element</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-element> : name of the element w/ bad value</bad-element></td>
-<td style="text-align:left">An element value is not correct; e.g., wrong type, out of range, pattern mismatch.</td>
-</tr>
-<tr>
-<td style="text-align:left">unknown-element</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-element> : name of the unexpected element</bad-element></td>
-<td style="text-align:left">An unexpected element is present</td>
-</tr>
-<tr>
-<td style="text-align:left">unknown-namespace</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><bad-element> : name of the element that contains the unexpected namespace <bad-namespace> : name of the unexpected namespace</bad-namespace></bad-element></td>
-<td style="text-align:left">An unexpected namespace is present</td>
-</tr>
-<tr>
-<td style="text-align:left">access-denied</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Access to the requested protocol operation or data model is denied because authorization failed.</td>
-</tr>
-<tr>
-<td style="text-align:left">lock-denied</td>
-<td style="text-align:left">protocol</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><session-id> : session ID of session holding the requested lock, or zero to indicate a non-NETCONF entity holds the lock</session-id></td>
-<td style="text-align:left">Access to the requested lock is denied because the lock is currently held by another entity.</td>
-</tr>
-<tr>
-<td style="text-align:left">resource-denied</td>
-<td style="text-align:left">transport, rpc, protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Request could not be completed because of insufficient resources.</td>
-</tr>
-<tr>
-<td style="text-align:left">rollback-failed</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Request to roll back some configuration change (via rollback-on-error or <discard-changes> operations) was not completed for some reason.</discard-changes></td>
-</tr>
-<tr>
-<td style="text-align:left">data-exists</td>
-<td style="text-align:left">application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Request could not be completed because the relevant ata model content already exists.  For example, a &quot;create&quot; operation was attempted on data that already exists.</td>
-</tr>
-<tr>
-<td style="text-align:left">data-missing</td>
-<td style="text-align:left">application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Request could not be completed because the relevant data model content does not exist.  For example, a &quot;delete&quot; operation was attempted on data that does not exist.</td>
-</tr>
-<tr>
-<td style="text-align:left">operation-not-supported</td>
-<td style="text-align:left">protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Request could not be completed because the requested operation is not supported by this implementation.</td>
-</tr>
-<tr>
-<td style="text-align:left">operation-failed</td>
-<td style="text-align:left">rpc, protocol, application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">Request could not be completed because the requested operation failed for some reason not covered by</td>
-</tr>
-<tr>
-<td style="text-align:left">partial-operation</td>
-<td style="text-align:left">application</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left"><ok-element> : identifies an element in the data model for which the requested operation has been completed for that node and all its child nodes. This element can appear zero or more times in the  <error-info> container.  <br><br>  <err-element> : identifies an element in the data model for which the requested operation has failed for that node and all its child nodes. This element can appear zero or more times in the <error-info> container. <br><br>  <noop-element> : identifies an element in the data model for which the requested operation was not attempted for that node and all its child nodes. This element can appear zero or more times in the <error-info> container.</error-info></noop-element></error-info></err-element></error-info></ok-element></td>
-<td style="text-align:left">This error-tag is obsolete, and SHOULD NOT be sent by servers conforming to this document. <br><br> Some part of the requested operation failed or was not attempted for some reason.  Full cleanup has not been performed (e.g., rollback not supported) by the server.  The error-info container is used to identify which portions of the application data model content for which the requested operation has succeeded (<ok-element>), failed (<bad-element>), or not been attempted (<noop-element>).</noop-element></bad-element></ok-element></td>
-</tr>
-<tr>
-<td style="text-align:left">malformed-message</td>
-<td style="text-align:left">rpc</td>
-<td style="text-align:left">error</td>
-<td style="text-align:left">none</td>
-<td style="text-align:left">A message could not be handled because it failed to be parsed correctly.  For example, the message is not  well-formed XML or it uses an invalid character set. <br><br> This error-tag is new in :base:1.1 and MUST NOT be sent to old clients.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x9644;&#x5F55;b-netconf&#x6D88;&#x606F;&#x5C42;&#x7684;xml&#x6A21;&#x5F0F;">&#x9644;&#x5F55;B. NETCONF&#x6D88;&#x606F;&#x5C42;&#x7684;XML&#x6A21;&#x5F0F;</h2>
-<p>&#x672C;&#x90E8;&#x5206;&#x662F;&#x89C4;&#x8303;&#x6027;&#x7684;&#x3002;</p>
-<blockquote>
-<p><code>&lt;CODE BEGINS&gt;</code> file &quot;netconf.xsd&quot;</p>
-</blockquote>
-<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
-<span class="hljs-tag">&lt;<span class="hljs-name">xs:schema</span> <span class="hljs-attr">xmlns:xs</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema&quot;</span>
-           <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
-           <span class="hljs-attr">targetNamespace</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
-           <span class="hljs-attr">elementFormDefault</span>=<span class="hljs-string">&quot;qualified&quot;</span>
-           <span class="hljs-attr">attributeFormDefault</span>=<span class="hljs-string">&quot;unqualified&quot;</span>
-           <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>
-           <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:annotation</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:documentation</span>&gt;</span>
-            This schema defines the syntax for the NETCONF Messages layer
-            messages &apos;hello&apos;, &apos;rpc&apos;, and &apos;rpc-reply&apos;.
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:documentation</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:annotation</span>&gt;</span>
-
-    <span class="hljs-comment">&lt;!--
-    import standard XML definitions
-    --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:import</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;http://www.w3.org/XML/1998/namespace&quot;</span>
-        <span class="hljs-attr">schemaLocation</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/xml.xsd&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:annotation</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:documentation</span>&gt;</span>
-                This import accesses the xml: attribute groups for the
-                xml:lang as declared on the error-message element.
-            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:documentation</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:annotation</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:import</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--
-    message-id attribute
-    --&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;messageIdType&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:maxLength</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4095&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--
-       Types used for session-id
-      --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;SessionId&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:unsignedInt&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:minInclusive</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;SessionIdOrZero&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:unsignedInt&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--
-       &lt;rpc&gt; element
-      --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcType&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;rpcOperation&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;message-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;messageIdType&quot;</span> <span class="hljs-attr">use</span>=<span class="hljs-string">&quot;required&quot;</span>/&gt;</span>
-        <span class="hljs-comment">&lt;!--
-        Arbitrary attributes can be supplied with &lt;rpc&gt; element.
-        --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:anyAttribute</span> <span class="hljs-attr">processContents</span>=<span class="hljs-string">&quot;lax&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpc&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcType&quot;</span>/&gt;</span>
-    <span class="hljs-comment">&lt;!--
-       data types and elements used to construct rpc-errors
-      --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ErrorType&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;transport&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;rpc&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;protocol&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;application&quot;</span>/&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ErrorTag&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;in-use&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;invalid-value&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;too-big&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;missing-attribute&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;bad-attribute&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;unknown-attribute&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;missing-element&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;bad-element&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;unknown-element&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;unknown-namespace&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;access-denied&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;lock-denied&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;resource-denied&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;rollback-failed&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;data-exists&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;data-missing&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;operation-not-supported&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;operation-failed&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;partial-operation&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;malformed-message&quot;</span>/&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ErrorSeverity&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;error&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;warning&quot;</span>/&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;errorInfoType&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:choice</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;session-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;SessionIdOrZero&quot;</span>/&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bad-attribute&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bad-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ok-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;err-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;noop-element&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:QName&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bad-namespace&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:string&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;1&quot;</span>/&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:choice</span>&gt;</span>
-        <span class="hljs-comment">&lt;!-- elements from any other namespace are also allowed
-        to follow the NETCONF elements --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:any</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;##other&quot;</span> <span class="hljs-attr">processContents</span>=<span class="hljs-string">&quot;lax&quot;</span>
-        <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcErrorType&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-type&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;ErrorType&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-tag&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;ErrorTag&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-severity&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;ErrorSeverity&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-app-tag&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:string&quot;</span>
-                    <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-path&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:string&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-message&quot;</span> <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleContent</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">xs:extension</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;xml:lang&quot;</span> <span class="hljs-attr">use</span>=<span class="hljs-string">&quot;optional&quot;</span>/&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">xs:extension</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleContent</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:element</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;error-info&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;errorInfoType&quot;</span>
-                    <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--
-       operation attribute used in &lt;edit-config&gt;
-      --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:simpleType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;editOperationType&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">xs:restriction</span> <span class="hljs-attr">base</span>=<span class="hljs-string">&quot;xs:string&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;merge&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;replace&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;create&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;delete&quot;</span>/&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:enumeration</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;remove&quot;</span>/&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">xs:restriction</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:simpleType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;operation&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;editOperationType&quot;</span>/&gt;</span>
-    <span class="hljs-comment">&lt;!--
-       &lt;rpc-reply&gt; element
-      --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcReplyType&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:choice</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ok&quot;</span>/&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;rpc-error&quot;</span>  <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;rpcResponse&quot;</span>   <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:choice</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:attribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;message-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;messageIdType&quot;</span>
-                  <span class="hljs-attr">use</span>=<span class="hljs-string">&quot;optional&quot;</span>/&gt;</span>
-        <span class="hljs-comment">&lt;!--
-        Any attributes supplied with &lt;rpc&gt; element must be returned
-        on &lt;rpc-reply&gt;.
-        --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:anyAttribute</span> <span class="hljs-attr">processContents</span>=<span class="hljs-string">&quot;lax&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpc-reply&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcReplyType&quot;</span>/&gt;</span>
-    <span class="hljs-comment">&lt;!--
-    &lt;rpc-error&gt; element
-    --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpc-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcErrorType&quot;</span>/&gt;</span>
-    <span class="hljs-comment">&lt;!--
-    rpcOperationType: used as a base type for all
-    NETCONF operations
-    --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcOperationType&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcOperation&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcOperationType&quot;</span> <span class="hljs-attr">abstract</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
-    <span class="hljs-comment">&lt;!--
-    rpcResponseType: used as a base type for all
-    NETCONF responses
-    --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcResponseType&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rpcResponse&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;rpcResponseType&quot;</span> <span class="hljs-attr">abstract</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
-          <span class="hljs-comment">&lt;!--
-             &lt;hello&gt; element
-            --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;hello&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;capabilities&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">xs:complexType</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">xs:sequence</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;capability&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;xs:anyURI&quot;</span> <span class="hljs-attr">maxOccurs</span>=<span class="hljs-string">&quot;unbounded&quot;</span>/&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">xs:element</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">xs:element</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;session-id&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;SessionId&quot;</span>
-                <span class="hljs-attr">minOccurs</span>=<span class="hljs-string">&quot;0&quot;</span>/&gt;</span>
-
-            <span class="hljs-tag">&lt;/<span class="hljs-name">xs:sequence</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:complexType</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">xs:element</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">xs:schema</span>&gt;</span>
-</code></pre>
-<blockquote>
-<p><code>&lt;CODE ENDS&gt;</code></p>
-</blockquote>
+                                <h2 id="&#x9644;&#x5F55;"><a name="&#x9644;&#x5F55;" class="plugin-anchor" href="#&#x9644;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9644;&#x5F55;.</h2>
 
                                 
                                 </section>
@@ -1276,10 +1000,14 @@
 
             
                 
-                <a href="../section-13/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 13. 参考">
+                <a href="../section-13/" class="navigation navigation-prev " aria-label="Previous page: 13. 参考">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="netconf-error-list.html" class="navigation navigation-next " aria-label="Next page: 附录A.NETCONF错误列表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1288,7 +1016,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Appendix","level":"1.15","depth":1,"previous":{"title":"13. 参考","level":"1.14","depth":1,"path":"section-13/README.md","ref":"section-13/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appendix/README.md","mtime":"2018-01-22T04:13:23.446Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T04:13:42.761Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"附录","level":"1.15","depth":1,"next":{"title":"附录A.NETCONF错误列表","level":"1.15.1","depth":2,"path":"appendix/netconf-error-list.md","ref":"appendix/netconf-error-list.md","articles":[]},"previous":{"title":"13. 参考","level":"1.14","depth":1,"path":"section-13/README.md","ref":"section-13/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appendix/README.md","mtime":"2017-12-11T16:56:38.321Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:31:37.811Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1296,6 +1024,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
